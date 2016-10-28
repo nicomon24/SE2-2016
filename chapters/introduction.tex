@@ -1,6 +1,50 @@
-\section{First section}
-Lorem ipssummm
+\section{Description of the problem}
+We are to project and develop a car-sharing system, PowerEnJoy. This service only rely only on electric cars, so more attention is paid to the driver behaviour to reduce infrastructure cost, minimizing the number of necessary charging stations. The system has to interact primarily with the users that wants to rent the car, but also with "\textbf{workers}", employees of the company PowerEni, that are responsible for the management of cars themselves. All the cars in the system are connected to the internet through a mobile data receiver and are equipped with several sensor (GPS, speedometer)\\
+\begin{description}
+\item [User] Users interact with the system primarily through a mobile application, given that users usually rent cars while they are on the move. The application allows users, or "\textbf{drivers}", to reserve a car by presenting a list or map of all the near-by available cars (using the user GPS position). The application allows the user to effectively use the car (find where it is parked, open the doors, find useful informations, e.g. near-by charging stations). The system also provides a web portal, where the user can manage all his informations (payment settings, license, birthdate, view payment history etcetera). Users can access the system only through a registration, that can be done both on the web portal and on the mobile application. During the registration, the user need to provide payment informations and a valid driving license. 
+\item [Workers] Workers interact with the system through a specific mobile application, released only to them. Workers are paid by the company to execute "tasks", that includes:
+\begin{itemize}
+\item Recharging on-site a car that was not left in a charging station
+\item Move cars to more popular places to maximize usage
+\item Pick up a car in the case of an incident or for normal maintenance
+\end{itemize}
+\end{description}
 
-\section{Second section}
-Ipsum dolor ma tantor
+\section{Goals}
+\textbf{Drivers goals}
+\begin{itemize}
+\item \textbf{[GOAL1]} Log in the system.
+\item \textbf{[GOAL2]} Allow drivers to reserve a car up to one hour before they pick it up
+\item \textbf{[GOAL3]} Allow drivers to open the reserved car
+\item \textbf{[GOAL4]} Allow drivers to pay correctly for the service
+\end{itemize}
 
+\textbf{Workers goals}
+\begin{itemize}
+\item \textbf{[GOAL10]} Log in the system
+\item \textbf{[GOAL11]} Dispatch tasks to workers
+\item \textbf{[GOAL12]} Allow workers to get informations about an assigned task
+\item \textbf{[GOAL13]} Allow workers to open and control the assigned task target car
+\item \textbf{[GOAL14]} Allow workers to keep track of the state of the task (assigned, in progress, done)
+\end{itemize}
+
+\section{Domain assumptions}
+\begin{itemize}
+\item Every car is equipped with some wireless communication system to connect it the the internet.
+\item Every car is equipped with GPS, speedometer and engine state sensors, data is sent remotely to the system through the internet.
+\item Every car is equipped with a remotely controllable closure system.
+\item Every car is legally usable on public street (insurance, taxes, maintenance)
+\item Every time the user reserves a car, the payment is pre-authorized by an amount equal to the rent of a day [MAYBE SHOULD NOT BE WRITTEN HERE]
+\item Workers are registered in the system by the company itself. The worker application is only distributed to them not on public stores.
+\item Every user can reserve a car at a time.
+\item Every worker must have only one task assigned at a time.
+\item Drivers always respect the driving rules and are able to drive.
+\item Driver-provided license informations are assumed to be truthful
+\end{itemize}
+
+\section{Glossary}
+\begin{description}
+\item [Driver] Client of the system, i.e. the one that uses the service, reserve and use cars. Every driver must provide personal informations (name, surname, email, birthdate, (?phone?)), a valid license and payment informations
+\item [Worker] Employee of the company, perform physical actions (moving, charging etc) on cars
+\item [Task] Piece of work assigned to a worker. Different type of tasks are described later. Every task assigns a single car to a single worker. 
+\end{description}

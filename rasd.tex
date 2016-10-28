@@ -1,5 +1,8 @@
 \documentclass[a4paper,12pt,oneside]{book} 
+\usepackage{titlesec}
 
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries}{}{0pt}{\Large}
 
 \begin{document}
 
@@ -15,7 +18,9 @@
 	
 	\tableofcontents
 
+	\begin{flushleft}
 	\chapter{Introduction}\label{cap:Intro}
 	\input{./chapters/introduction.tex}
+	\end{flushleft}
 
-\end{document}
+\end{document}x
