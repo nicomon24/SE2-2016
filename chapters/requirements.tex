@@ -1,0 +1,49 @@
+\section{Functional Requirements}
+
+Given all the assumptions, domain properties and constraints from (<chapter>), these functional requirements can be stated, listed by the goal they fulfill
+
+\begin{itemize}
+\item \textbf{[GOAL1]} Driver must log in the system 
+	\begin{itemize}
+	\item The system must check if the provided user exists and if the provided password matches
+	\item The system must provide further access only if the user is logged
+	\end{itemize}
+\item \textbf{[GOAL2]} Allow drivers to reserve a car up to one hour before they pick it up
+	\begin{itemize}
+	\item The system must access driver GPS position or use a user-provided position to recommend the best vehicle to choose
+	\item The system must check if the user is logged in and if it is not a blocked driver
+	\item The system must check that the user has not other active reservation 
+	\item The system must check payment service by pre-authorizing a payment of a fixed amount (to be defined)
+	\item The system must reserve the chosen vehicle, i.e. no other user is allowed to reserve the car until it is available again, once the payment is done. The vehicle is considered available again in case of: drop off, cancel registration, one hour passed from the reservation without any driver interaction
+	\end{itemize}
+\item \textbf{[GOAL3]} Allow drivers to open the reserved car
+	\begin{itemize}
+	\item The system must check if the user is nearby the reserved car to open it
+	\item The system must be able to open the car remotely, only if the user effectively reserved it and is nearby
+	\end{itemize}
+\item \textbf{[GOAL4]} Allow drivers to pay correctly for the service
+	\begin{itemize}
+	\item The system must log all the drive by the driver (elapsed time, driven km)
+	\item The system must compute the amount the driver must pay for the service
+	\item The system must request a payment of the correct amount 
+	\end{itemize}
+\item \textbf{[GOAL5]} Allow drivers to cancel a reservation
+	\begin{itemize}
+	\item The system must be able to cancel a reservation if the driver asks it, given that the reservation has not exceed the 1 hour limit, without making him pay
+	\end{itemize}
+\item \textbf{[GOAL50]} Worker must log in the system
+	\begin{itemize}
+	\item The system must check if the provided worker id exists and if the password matches
+	\item The system must provide further access only to logged workers
+	\end{itemize}
+\item \textbf{[GOAL51]} Dispatch tasks to workers
+	\begin{itemize}
+	\item The system must be able to create a new task. The new task can be created from the administration console or generated automatically by a set of pre-defined rules (e.g. maintenance, usage balance)
+	\item The system must select the nearest available worker and assign him the task
+	\item The system must notify to the selected user that a new task has been assigned to him
+	\end{itemize}
+\item \textbf{[GOAL52]} Allow workers to get informations about an assigned task
+	\begin{itemize}
+	\item TOOODODODODO
+	\end{itemize}
+\end{itemize}
