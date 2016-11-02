@@ -12,7 +12,7 @@ Given all the assumptions, domain properties and constraints from (<chapter>), t
 	\begin{itemize}
 	\item The system must access driver GPS position or use a user-provided position to recommend the best vehicle to choose
 	\item The system must check if the user is logged in and if it is not a blocked driver
-	\item The system must check that the user has not other active reservation 
+	\item The system must check that the user has no other active reservation 
 	\item The system must check payment service by pre-authorizing a payment of a fixed amount (to be defined)
 	\item The system must reserve the chosen vehicle, i.e. no other user is allowed to reserve the car until it is available again, once the payment is done. The vehicle is considered available again in case of: drop off, cancel registration, one hour passed from the reservation without any driver interaction
 	\end{itemize}
@@ -23,7 +23,7 @@ Given all the assumptions, domain properties and constraints from (<chapter>), t
 	\end{itemize}
 \item \textbf{[GOAL4]} Allow drivers to pay correctly for the service
 	\begin{itemize}
-	\item The system must log all the drive by the driver (elapsed time, driven km)
+	\item The system must log the whole drive by the driver (elapsed time, driven km)
 	\item The system must compute the amount the driver must pay for the service
 	\item The system must request a payment of the correct amount 
 	\end{itemize}
