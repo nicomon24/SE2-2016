@@ -24,8 +24,8 @@ sig Payment {
 }
 
 sig ValidDriver extends Driver {
-	license : License,
-	paymentinfo : PaymentInfo
+	license : one License,
+	paymentinfo : one PaymentInfo
 }
 
 sig Reservation {
