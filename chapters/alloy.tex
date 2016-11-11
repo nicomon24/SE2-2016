@@ -1,0 +1,91 @@
+In this chapter we will present the Alloy code and generated graphs used to check model consistency. The specification mostly relies on facts. 
+\section{Alloy code}
+\begin{lstlisting} [ language=Alloy ]
+sig Vehicle {}
+
+sig Email {}
+
+sig License {}
+
+sig PaymentInfo{}
+
+sig Driver {
+	email : Email
+}
+
+sig ValidDriver extends Driver {
+	license : one License,
+	paymentinfo : one PaymentInfo
+}
+
+sig Reservation {
+	driver : one ValidDriver,
+	vehicle : one Vehicle
+}
+
+fact uniqueDriverInfos {
+
+	all d1,d2: Driver | 
+	d1 != d2 => d1.email != d2.email
+	
+	all d1,d2: ValidDriver | 
+	d1 != d2 => d1.license != d2.license
+	
+	all d1,d2: ValidDriver | 
+	d1 != d2 => d1.paymentinfo != d2.paymentinfo
+	
+	ValidDriver.license = License
+	
+	ValidDriver.paymentinfo = PaymentInfo
+	
+	ValidDriver.email = Email
+}
+
+fact singleReservation {
+
+	all r1, r2: Reservation | 
+	r1 != r2 => r1.driver != r2.driver
+	
+	all r1, r2: Reservation | 
+	r1 != r2 => r1.vehicle != r2.vehicle
+}
+
+fact mainteinance {
+	
+	all r : Reservation | 
+	not (r.vehicle in Report.vehicle)
+	
+	all t1, t2 : Report | 
+	t1 != t2 => t1.vehicle != t2.vehicle
+}
+
+//Workers signals
+sig Worker {
+}
+
+sig Report {
+	vehicle : one Vehicle,
+	driver : one ValidDriver
+}
+
+sig Task extends Report{
+	worker : Worker
+}
+
+
+pred show() {
+	#Vehicle = 5
+	#ValidDriver = 3
+	#Reservation = 2
+	#Report = 3
+	#Worker = 2
+}
+
+run show for 5
+\end{lstlisting}
+
+\section{Generated world and results}
+The simulation returned a consistent system. The generated graph is presented below: in this world there are total of 5 vehicles, 3 Drivers (all valid), 2 Workers. At the current time of the system, there are 2 active reservations, 2 active tasks in progress, and 1 generated report that is waiting for an available Worker to be assigned to.
+\begin{center}
+\includegraphics[width=12cm,keepaspectratio]{Alloying}
+\end{center}

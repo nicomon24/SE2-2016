@@ -1,6 +1,6 @@
 \section{Functional Requirements}
 
-Given all the assumptions, domain properties and constraints from (<chapter>), these functional requirements can be stated, listed by the goal they fulfill
+Given all the assumptions, domain properties and constraints from \underline{\autoref{cap:Intro}}, these functional requirements can be stated, listed by the goal they fulfill
 
 \begin{itemize}
 \item \textbf{[GOAL1]} Driver must log in the system 
@@ -44,6 +44,36 @@ Given all the assumptions, domain properties and constraints from (<chapter>), t
 	\end{itemize}
 \item \textbf{[GOAL52]} Allow workers to get informations about an assigned task
 	\begin{itemize}
-	\item TOOODODODODO
+	\item The system must provide through the PowerEniWorker App all the needed information for the Worker. These include the GPS position of the car, the reported issue and additional information the user could have provided
+	\end{itemize}
+\item \textbf{[GOAL53]} Allow workers to open and control the assigned car
+	\begin{itemize}
+	\item The System, during the assignment of a Task, gives to the chosen Worker the complete control of the car, i.e. normal actions (turn on/off engine, lock/unlock) but also priviliged actions (open hood, access maintenance interfaces, e.g. OBD)
+	\end{itemize}
+\item \textbf{[GOAL54]} Allow workers to update the state of the task (assigned, in progress, done)
+	\begin{itemize}
+	\item The System must provide, through the PowerEniWorker App, buttons to change the state of the assigned Task, also with an optional description. Task can be completed or unfixable.
+	\end{itemize}
+\item \textbf{[GOAL100]} Log in the administration console
+	\begin{itemize}
+	\item The system must check if the provided Admin ID exists and the password matches
+	\item The system must provide further access only to logged Admins
+	\end{itemize}
+\item \textbf{[GOAL101]} Allow to register new workers
+	\begin{itemize}
+	\item The System must provide a form to fill in the Admin Portal to insert all the information of the new Worker
+	\item The System must create a new Worker account once the previous information are provided.
+	\item The System must print the badge used for Worker authentication with the unique Worker signature on it.
+	\end{itemize}
+\item \textbf{[GOAL102]} Allow to view the status of a specific vehicle
+	\begin{itemize}
+	\item The System must provide an interface to select a car among all.
+	\item The System must provide analytics and current status of the chosen car.
+	\end{itemize}
+\item \textbf{[GOAL103]} Allow to request an exceptional task on a specific vehicle
+	\begin{itemize}
+	\item The System must provide an interface to select a car among all.
+	\item The System must provide a button to create a new Task, along with specification of the Task itself, inserted manually by the Admin.
+	\item The System assigns the newly generated Task to the most suitable available Worker as in a normal Task
 	\end{itemize}
 \end{itemize}

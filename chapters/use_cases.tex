@@ -1,4 +1,4 @@
-\section{Use case diagram}
+\section{UML Use case diagram}
 \includegraphics[width=13cm,height=13cm,keepaspectratio]{usecase}
 \section{Driver use cases}
 Here we list relevant use cases for the Driver:\\
@@ -109,8 +109,7 @@ Here we list relevant use cases for the Driver:\\
 \item The Driver gets inside the car, turns it on and begins to drive;
 \item The System logs the route and the duration of the drive;
 \item The System presents to the Driver his current due amount and all the nearby recharging stations;
-\item The Driver stops the car, gets outside the car and closes the door;
-\item 30 seconds later the car automatically locks itself and the ride is terminated by the System;
+\item When the Driver stops the car in a Safe Area and he gets outside, the car waits 30 seconds and then locks itself automatically. The Ride is terminated.
 \item The System calculates the correct amount to be paid (depending on discount policies) and charges the Driver's credit card accordingly.
 \end{itemize}
 \textbf{Exit conditions:} the Driver got to the final destination and the car is marked again as "available".\\

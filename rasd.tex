@@ -1,6 +1,26 @@
 \documentclass[a4paper,12pt,oneside]{book} 
 \usepackage{titlesec}
 \usepackage{graphicx}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\definecolor{bluekeywords}{rgb}{0.13,0.13,1}
+\definecolor{greencomments}{rgb}{0,0.5,0}
+\definecolor{turqusnumbers}{rgb}{0.17,0.57,0.69}
+\definecolor{redstrings}{rgb}{0.5,0,0}
+
+
+\lstdefinelanguage{Alloy}
+    {morekeywords={sig, fact, pred, run, for, extends},
+    keywordstyle=\color{bluekeywords},
+    sensitive=false,
+    morecomment=[l][\color{greencomments}]{///},
+    morecomment=[l][\color{greencomments}]{//},
+    morecomment=[s][\color{greencomments}]{{/*}{*/}},
+    morestring=[b]",
+    stringstyle=\color{redstrings}
+}
+
 \graphicspath{ {images/} }
 \DeclareGraphicsExtensions{.pdf,.png,.jpg}
 
@@ -8,7 +28,6 @@
   {\normalfont\bfseries}{}{0pt}{\Large}
 
 \begin{document}
-
 	
 	\pagestyle{empty}\centering
 	\textsc{\Large Software Engineering 2 Project\\}
@@ -30,8 +49,10 @@
 	\input{./chapters/requirements.tex}
 	\chapter{Scenario Identification}\label{cap:ScenarioIdentifying}
 	\input{./chapters/scenarioidentifying.tex}
-	\chapter{UML diagrams}\label{cap:UML}
+	\chapter{Use Cases}\label{cap:usecases}
 	\input{./chapters/use_cases.tex}
+	\chapter{Model Coherence Analysis}\label{cap:Alloy}
+	\input{./chapters/alloy.tex}
 	\end{flushleft}
 
 \end{document}

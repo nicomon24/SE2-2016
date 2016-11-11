@@ -48,8 +48,8 @@ We are to project and develop a car-sharing system, PowerEnJoy. This service onl
 \section{Domain assumptions}
 \begin{itemize}
 \item Every car is equipped with some wireless communication system to connect it the the internet.
-\item Every car is equipped with GPS, speedometer and engine state sensors, data is sent remotely to the system through the internet.
-\item Every car is equipped with a remotely controllable closure system.
+\item Every car is equipped with GPS, speedometer, passenger presence sensors, engine state sensors, data is sent remotely to the system through the internet.
+\item Every car is equipped with a remotely controllable locking system.
 \item Every car is legally usable on public street (insurance, taxes, maintenance)
 \item Every time the user reserves a car, the payment is pre-authorized by an amount equal to the rent of a day [MAYBE SHOULD NOT BE WRITTEN HERE]
 \item Workers are registered in the system by the company itself. The worker application is only distributed to them not on public stores.
@@ -57,16 +57,20 @@ We are to project and develop a car-sharing system, PowerEnJoy. This service onl
 \item Every worker must have only one task assigned at a time.
 \item Drivers always respect the driving rules and are able to drive.
 \item Driver-provided license informations are assumed to be truthful
+\item Safe areas are considered already defined by the management system.
 \end{itemize}
 
 \section{Glossary}
 \begin{description}
-\item [Driver] Client of the system, i.e. the one that uses the service, reserves and drives. Every driver must provide personal informations (name, surname, email, birthdate, (?phone?)), a valid license and payment informations
+\item [Driver] Client of the system, i.e. the one that uses the service, reserves and drives. Every Driver must provide personal informations (name, surname, email, birthdate, a valid license and payment information.
+\item [Ride] A single usage of the service, starts when the user turn on the engine, stops when the car is locked inside a Safe Area;
 \item [Blocked driver] A driver that has an invalid license or invalid payment coordinates
 \item [Worker] Employee of the company, perform physical actions (moving, charging etc) on cars
+\item [Report] Car issue reported by the Driver during a Drive. Will later be assigned to a Worker.
 \item [Task] Piece of work assigned to a worker. Different type of tasks are described later. Every task assigns a single car to a single worker. 
 \item [Administrator] Employee of PowerEni that is in charge of the administration of the system through the administration console.
 \item [Drop off] The act of leaving the car inside a safe area. This ends the service provided to the driver and effectively make the driver pay
+\item [Safe Area] An area in which the Driver can park the car and stop the Service. 
 \end{description}
 
 \section{Assumptions}

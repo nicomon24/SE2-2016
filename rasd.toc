@@ -1,17 +1,20 @@
-\contentsline {chapter}{\numberline {1}Introduction}{3}
-\contentsline {section}{\numberline {1.1}Description of the problem}{3}
-\contentsline {section}{\numberline {1.2}Goals}{4}
-\contentsline {section}{\numberline {1.3}Domain assumptions}{5}
-\contentsline {section}{\numberline {1.4}Glossary}{6}
-\contentsline {section}{\numberline {1.5}Assumptions}{6}
-\contentsline {section}{\numberline {1.6}Stakeholders}{6}
-\contentsline {section}{\numberline {1.7}References}{6}
-\contentsline {chapter}{\numberline {2}Actors}{7}
-\contentsline {chapter}{\numberline {3}Requirements}{8}
-\contentsline {section}{\numberline {3.1}Functional Requirements}{8}
-\contentsline {chapter}{\numberline {4}Scenario Identification}{10}
-\contentsline {chapter}{\numberline {5}UML diagrams}{13}
-\contentsline {section}{\numberline {5.1}Use case diagram}{13}
-\contentsline {section}{\numberline {5.2}Driver use cases}{14}
-\contentsline {section}{\numberline {5.3}Worker use cases}{18}
-\contentsline {section}{\numberline {5.4}Admin use cases}{20}
+\contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Description of the problem}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}Goals}{4}{section.1.2}
+\contentsline {section}{\numberline {1.3}Domain assumptions}{5}{section.1.3}
+\contentsline {section}{\numberline {1.4}Glossary}{6}{section.1.4}
+\contentsline {section}{\numberline {1.5}Assumptions}{6}{section.1.5}
+\contentsline {section}{\numberline {1.6}Stakeholders}{6}{section.1.6}
+\contentsline {section}{\numberline {1.7}References}{6}{section.1.7}
+\contentsline {chapter}{\numberline {2}Actors}{7}{chapter.2}
+\contentsline {chapter}{\numberline {3}Requirements}{8}{chapter.3}
+\contentsline {section}{\numberline {3.1}Functional Requirements}{8}{section.3.1}
+\contentsline {chapter}{\numberline {4}Scenario Identification}{11}{chapter.4}
+\contentsline {chapter}{\numberline {5}Use Cases}{14}{chapter.5}
+\contentsline {section}{\numberline {5.1}UML Use case diagram}{14}{section.5.1}
+\contentsline {section}{\numberline {5.2}Driver use cases}{15}{section.5.2}
+\contentsline {section}{\numberline {5.3}Worker use cases}{19}{section.5.3}
+\contentsline {section}{\numberline {5.4}Admin use cases}{21}{section.5.4}
+\contentsline {chapter}{\numberline {6}Model Coherence Analysis}{24}{chapter.6}
+\contentsline {section}{\numberline {6.1}Alloy code}{24}{section.6.1}
+\contentsline {section}{\numberline {6.2}Generated world and results}{26}{section.6.2}
