@@ -9,12 +9,21 @@
 \BOOKMARK [0][-]{chapter.2}{Actors}{}% 9
 \BOOKMARK [0][-]{chapter.3}{Requirements}{}% 10
 \BOOKMARK [1][-]{section.3.1}{Functional Requirements}{chapter.3}% 11
-\BOOKMARK [0][-]{chapter.4}{Scenario Identification}{}% 12
-\BOOKMARK [0][-]{chapter.5}{Use Cases}{}% 13
-\BOOKMARK [1][-]{section.5.1}{UML Use case diagram}{chapter.5}% 14
-\BOOKMARK [1][-]{section.5.2}{Driver use cases}{chapter.5}% 15
-\BOOKMARK [1][-]{section.5.3}{Worker use cases}{chapter.5}% 16
-\BOOKMARK [1][-]{section.5.4}{Admin use cases}{chapter.5}% 17
-\BOOKMARK [0][-]{chapter.6}{Model Coherence Analysis}{}% 18
-\BOOKMARK [1][-]{section.6.1}{Alloy code}{chapter.6}% 19
-\BOOKMARK [1][-]{section.6.2}{Generated world and results}{chapter.6}% 20
+\BOOKMARK [1][-]{section.3.2}{Non-functional requirements}{chapter.3}% 12
+\BOOKMARK [2][-]{subsection.3.2.1}{Usability}{section.3.2}% 13
+\BOOKMARK [2][-]{subsection.3.2.2}{Privacy and Security}{section.3.2}% 14
+\BOOKMARK [2][-]{subsection.3.2.3}{Architectural consideration}{section.3.2}% 15
+\BOOKMARK [2][-]{subsection.3.2.4}{Mobile application}{section.3.2}% 16
+\BOOKMARK [2][-]{subsection.3.2.5}{Web portal}{section.3.2}% 17
+\BOOKMARK [0][-]{chapter.4}{Scenario Identification}{}% 18
+\BOOKMARK [0][-]{chapter.5}{Use Cases}{}% 19
+\BOOKMARK [1][-]{section.5.1}{UML use case diagram}{chapter.5}% 20
+\BOOKMARK [1][-]{section.5.2}{Driver use cases}{chapter.5}% 21
+\BOOKMARK [1][-]{section.5.3}{Worker use cases}{chapter.5}% 22
+\BOOKMARK [1][-]{section.5.4}{Admin use cases}{chapter.5}% 23
+\BOOKMARK [1][-]{section.5.5}{Sequence diagrams}{chapter.5}% 24
+\BOOKMARK [2][-]{subsection.5.5.1}{Registration}{section.5.5}% 25
+\BOOKMARK [2][-]{subsection.5.5.2}{Reservation with Report}{section.5.5}% 26
+\BOOKMARK [0][-]{chapter.6}{Model Coherence Analysis}{}% 27
+\BOOKMARK [1][-]{section.6.1}{Alloy code}{chapter.6}% 28
+\BOOKMARK [1][-]{section.6.2}{Generated world and results}{chapter.6}% 29
