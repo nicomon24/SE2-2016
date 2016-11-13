@@ -23,6 +23,7 @@
 \BOOKMARK [1][-]{section.5.5}{Sequence diagrams}{chapter.5}% 23
 \BOOKMARK [2][-]{subsection.5.5.1}{Registration}{section.5.5}% 24
 \BOOKMARK [2][-]{subsection.5.5.2}{Reservation with Report}{section.5.5}% 25
-\BOOKMARK [0][-]{chapter.6}{Model Coherence Analysis}{}% 26
-\BOOKMARK [1][-]{section.6.1}{Alloy code}{chapter.6}% 27
-\BOOKMARK [1][-]{section.6.2}{Generated world and results}{chapter.6}% 28
+\BOOKMARK [1][-]{section.5.6}{Class diagram}{chapter.5}% 26
+\BOOKMARK [0][-]{chapter.6}{Model Coherence Analysis}{}% 27
+\BOOKMARK [1][-]{section.6.1}{Alloy code}{chapter.6}% 28
+\BOOKMARK [1][-]{section.6.2}{Generated world and results}{chapter.6}% 29

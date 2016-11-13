@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.4)  12 NOV 2016 17:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.4)  13 NOV 2016 15:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -403,7 +403,19 @@ Overfull \hbox (122.15927pt too wide) in paragraph at lines 429--430
  [] 
  []
 
-[30 <./images/Registration.png>]) [31 <./images/ReservationWithReport.png>]
+[30 <./images/Registration.png>] [31 <./images/ReservationWithReport.png>]
+<images/ClassDiagram.png, id=302, 653.44125pt x 579.16376pt>
+File: images/ClassDiagram.png Graphic file (type png)
+
+<use images/ClassDiagram.png>
+Package pdftex.def Info: images/ClassDiagram.png used on input line 435.
+(pdftex.def)             Requested size: 512.14488pt x 453.92873pt.
+
+Overfull \hbox (122.14488pt too wide) in paragraph at lines 435--436
+ [] 
+ []
+
+) [32 <./images/ClassDiagram.png>]
 Chapter 6.
 (./chapters/alloy.tex
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 29.
@@ -413,56 +425,46 @@ File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 29.
- [32
+ [33
 
-] [33]
-<images/Alloying.png, id=378, 779.91376pt x 1502.61375pt>
+] [34]
+<images/Alloying.png, id=384, 779.91376pt x 1502.61375pt>
 File: images/Alloying.png Graphic file (type png)
 
 <use images/Alloying.png>
 Package pdftex.def Info: images/Alloying.png used on input line 90.
 (pdftex.def)             Requested size: 341.43306pt x 657.80461pt.
- [34]
+ [35]
 Overfull \vbox (65.80461pt too high) has occurred while \output is active []
 
 
-[35 <./images/Alloying.png>])
+[36 <./images/Alloying.png>])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
  (./rasd.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
-
-
-Package rerunfilecheck Warning: File `rasd.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `rasd.out':
-(rerunfilecheck)             Before: DEB9D91CB2C4EB6BFAE28C5AF8173057;1803
-(rerunfilecheck)             After:  13A4E50888E1D9D58BF946758A12A029;1745.
+Package rerunfilecheck Info: File `rasd.out' has not changed.
+(rerunfilecheck)             Checksum: FF886FD77EFEB4959D4F35ECA15B405B;1805.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 58.
  ) 
 Here is how much of TeX's memory you used:
- 7289 strings out of 493014
- 106438 string characters out of 6133351
+ 7295 strings out of 493014
+ 106572 string characters out of 6133351
  214328 words of memory out of 5000000
- 10610 multiletter control sequences out of 15000+600000
+ 10614 multiletter control sequences out of 15000+600000
  8803 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,6n,42p,1126b,1935s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{section.1.7} has been referenced but does not exi
-st, replaced by a fixed one
-
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
-r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on rasd.pdf (35 pages, 1525678 bytes).
+ 29i,6n,42p,1126b,1941s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on rasd.pdf (36 pages, 1559832 bytes).
 PDF statistics:
- 455 PDF objects out of 1000 (max. 8388607)
- 393 compressed objects within 4 object streams
- 148 named destinations out of 1000 (max. 500000)
- 273 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 461 PDF objects out of 1000 (max. 8388607)
+ 396 compressed objects within 4 object streams
+ 149 named destinations out of 1000 (max. 500000)
+ 278 words of extra memory for PDF output out of 10000 (max. 10000000)
 
