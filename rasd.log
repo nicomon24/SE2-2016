@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.4)  13 NOV 2016 15:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.4)  13 NOV 2016 16:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -290,10 +290,17 @@ LaTeX Info: Redefining \nameref on input line 30.
 \@outlinefile=\write3
 \openout3 = `rasd.out'.
 
+ <images/polimi.jpg, id=120, 1204.5pt x 483.30562pt>
+File: images/polimi.jpg Graphic file (type jpg)
+
+<use images/polimi.jpg>
+Package pdftex.def Info: images/polimi.jpg used on input line 42.
+(pdftex.def)             Requested size: 142.25475pt x 57.07971pt.
  [1
 
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./image
+s/polimi.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
 |\OT1/cmr/bx/n/17.28 Contents|
  []
 
@@ -333,27 +340,27 @@ Chapter 3.
 (./chapters/requirements.tex [9
 
 ] [10] [11] [12]
-<images/login.png, id=206, 945.5325pt x 1816.7875pt>
+<images/login.png, id=207, 945.5325pt x 1816.7875pt>
 File: images/login.png Graphic file (type png)
  <use images/login.png>
 Package pdftex.def Info: images/login.png used on input line 102.
 (pdftex.def)             Requested size: 281.35352pt x 540.60497pt.
 
-[13 <./images/login.png>] <images/map.png, id=214, 961.5925pt x 1830.84pt>
+[13 <./images/login.png>] <images/map.png, id=215, 961.5925pt x 1830.84pt>
 File: images/map.png Graphic file (type png)
 
 <use images/map.png>
 Package pdftex.def Info: images/map.png used on input line 105.
 (pdftex.def)             Requested size: 283.93143pt x 540.59598pt.
  [14 <./images/map.png>]
-<images/reserve.png, id=220, 937.5025pt x 1837.86626pt>
+<images/reserve.png, id=221, 937.5025pt x 1837.86626pt>
 File: images/reserve.png Graphic file (type png)
 
 <use images/reserve.png>
 Package pdftex.def Info: images/reserve.png used on input line 108.
 (pdftex.def)             Requested size: 275.75975pt x 540.59541pt.
  [15 <./images/reserve.png>]
-<images/portal.png, id=226, 1974.37625pt x 1171.37625pt>
+<images/portal.png, id=227, 1974.37625pt x 1171.37625pt>
 File: images/portal.png Graphic file (type png)
 
 <use images/portal.png>
@@ -371,7 +378,7 @@ Chapter 4.
 ] [18]) [19]
 Chapter 5.
 (./chapters/use_cases.tex
-<images/usecase.png, id=245, 2045.6425pt x 1935.23pt>
+<images/usecase.png, id=246, 2045.6425pt x 1935.23pt>
 File: images/usecase.png Graphic file (type png)
  <use images/usecase.png>
 Package pdftex.def Info: images/usecase.png used on input line 2.
@@ -380,7 +387,7 @@ Package pdftex.def Info: images/usecase.png used on input line 2.
 [20
 
  <./images/usecase.png>] [21] [22] [23] [24] [25] [26] [27] [28]
-<images/Registration.png, id=284, 796.9775pt x 740.7675pt>
+<images/Registration.png, id=285, 796.9775pt x 740.7675pt>
 File: images/Registration.png Graphic file (type png)
 
 <use images/Registration.png>
@@ -391,7 +398,7 @@ Overfull \hbox (122.16768pt too wide) in paragraph at lines 425--426
  [] 
  []
 
-[29] <images/ReservationWithReport.png, id=290, 909.3975pt x 796.9775pt>
+[29] <images/ReservationWithReport.png, id=291, 909.3975pt x 796.9775pt>
 File: images/ReservationWithReport.png Graphic file (type png)
 
 <use images/ReservationWithReport.png>
@@ -404,7 +411,7 @@ Overfull \hbox (122.15927pt too wide) in paragraph at lines 429--430
  []
 
 [30 <./images/Registration.png>] [31 <./images/ReservationWithReport.png>]
-<images/ClassDiagram.png, id=302, 653.44125pt x 579.16376pt>
+<images/ClassDiagram.png, id=303, 653.44125pt x 579.16376pt>
 File: images/ClassDiagram.png Graphic file (type png)
 
 <use images/ClassDiagram.png>
@@ -428,7 +435,7 @@ LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
  [33
 
 ] [34]
-<images/Alloying.png, id=384, 779.91376pt x 1502.61375pt>
+<images/Alloying.png, id=385, 779.91376pt x 1502.61375pt>
 File: images/Alloying.png Graphic file (type png)
 
 <use images/Alloying.png>
@@ -439,20 +446,20 @@ Overfull \vbox (65.80461pt too high) has occurred while \output is active []
 
 
 [36 <./images/Alloying.png>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 63.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 63.
  (./rasd.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 63.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 63.
 Package rerunfilecheck Info: File `rasd.out' has not changed.
 (rerunfilecheck)             Checksum: FF886FD77EFEB4959D4F35ECA15B405B;1805.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 58.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 63.
  ) 
 Here is how much of TeX's memory you used:
- 7295 strings out of 493014
- 106572 string characters out of 6133351
+ 7301 strings out of 493014
+ 106673 string characters out of 6133351
  214328 words of memory out of 5000000
- 10614 multiletter control sequences out of 15000+600000
+ 10618 multiletter control sequences out of 15000+600000
  8803 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  29i,6n,42p,1126b,1941s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -461,10 +468,10 @@ Here is how much of TeX's memory you used:
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on rasd.pdf (36 pages, 1559832 bytes).
+Output written on rasd.pdf (36 pages, 1656182 bytes).
 PDF statistics:
- 461 PDF objects out of 1000 (max. 8388607)
+ 462 PDF objects out of 1000 (max. 8388607)
  396 compressed objects within 4 object streams
  149 named destinations out of 1000 (max. 500000)
- 278 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 283 words of extra memory for PDF output out of 10000 (max. 10000000)
 
