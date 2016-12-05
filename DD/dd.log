@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.4)  4 DEC 2016 14:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.4)  5 DEC 2016 12:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -290,7 +290,7 @@ LaTeX Info: Redefining \nameref on input line 30.
 \@outlinefile=\write3
 \openout3 = `dd.out'.
 
- <images/polimi.jpg, id=20, 1204.5pt x 483.30562pt>
+ <images/polimi.jpg, id=40, 1204.5pt x 483.30562pt>
 File: images/polimi.jpg Graphic file (type jpg)
 
 <use images/polimi.jpg>
@@ -336,33 +336,44 @@ Overfull \hbox (0.75583pt too wide) in paragraph at lines 22--22
 
 ]
 Missing character: There is no   in font cmr12!
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 53.
- [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
+ [4]) [5]
+Chapter 2.
+(./chapters/architecture.tex
+<images/archi.png, id=76, 1334.9875pt x 774.895pt>
+File: images/archi.png Graphic file (type png)
+ <use images/archi.png>
+Package pdftex.def Info: images/archi.png used on input line 8.
+(pdftex.def)             Requested size: 369.88582pt x 214.69893pt.
+
+[6
+
+ <./images/archi.png>])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 55.
+ [7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 55.
  (./dd.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 53.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 53.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 55.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 55.
 Package rerunfilecheck Info: File `dd.out' has not changed.
-(rerunfilecheck)             Checksum: AA39E1BABDB63871ABAC36787E47E09F;236.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 53.
+(rerunfilecheck)             Checksum: 21F9806FB65A2DC8C2CBB735D11B7CFE;533.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 55.
  ) 
 Here is how much of TeX's memory you used:
- 6993 strings out of 493014
- 102153 string characters out of 6133351
- 197136 words of memory out of 5000000
- 10477 multiletter control sequences out of 15000+600000
+ 7015 strings out of 493014
+ 102456 string characters out of 6133351
+ 197171 words of memory out of 5000000
+ 10487 multiletter control sequences out of 15000+600000
  8198 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,5n,35p,367b,495s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,5n,35p,388b,500s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
 /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on dd.pdf (4 pages, 151724 bytes).
+Output written on dd.pdf (7 pages, 266451 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
- 10 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 109 PDF objects out of 1000 (max. 8388607)
+ 92 compressed objects within 1 object stream
+ 18 named destinations out of 1000 (max. 500000)
+ 83 words of extra memory for PDF output out of 10000 (max. 10000000)
 

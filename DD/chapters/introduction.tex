@@ -19,18 +19,49 @@ The System allows the Drivers to reserve cars from both the mobile application a
 
 \section{Definitions, Acronyms and Abbreviations}
 \begin{description}
-\item [Driver] Client of the system, i.e. the one that uses the service, reserves and drives. Every Driver must provide personal informations (name, surname, email, birthdate, a valid license and payment information.
+\item [Driver] Client of the system, i.e. the one that uses the service, reserves and drives. Every Driver must provide personal informations (name, surname, email, birthdate, a valid license and payment information;
 \item [Ride] A single usage of the service, starts when the user turn on the engine, stops when the car is locked inside a Safe Area;
-\item [Blocked driver] A driver that has an invalid license or invalid payment coordinates
-\item [Worker] Employee of the company, perform physical actions (moving, charging etc) on cars
-\item [Report] Car issue reported by the Driver during a Drive. Will later be assigned to a Worker.
-\item [Task] Piece of work assigned to a worker. Different type of tasks are described later. Every task assigns a single car to a single worker. 
-\item [Administrator] Employee of PowerEni that is in charge of the administration of the system through the administration console.
-\item [Drop off] The act of leaving the car inside a safe area. This ends the service provided to the driver and effectively make the driver pay
-\item [Safe Area] An area in which the Driver can park the car and stop the Service. 
+\item [Blocked driver] A driver that has an invalid license or invalid payment coordinates;
+\item [Worker] Employee of the company, perform physical actions (moving, charging etc) on cars;
+\item [Report] Car issue reported by the Driver during a Drive. Will later be assigned to a Worker;
+\item [Task] Piece of work assigned to a worker. Different type of tasks are described later. Every task assigns a single car to a single worker;
+\item [Administrator] Employee of PowerEni that is in charge of the administration of the system through the administration console;
+\item [Drop off] The act of leaving the car inside a safe area. This ends the service provided to the driver and effectively make the driver pay;
+\item [Safe Area] An area in which the Driver can park the car and stop the Service;
 \item [RASD] Requirements Analysis and Specifications Document;
 \item [DD] Design Document;
 \item [API] Application Programming Interface; 
+\item [DBMS] DataBase Management System;
+\item [UI] User Interface;
+\item [REST] REpresantional State Transfer.
 \end{description}
+
+\section{Reference Documents}
+\begin{itemize}
+\item The RASD we released before;
+\item Sample Design Deliverable Discussed on Nov. 2.pdf.
+\end{itemize}
+
+\section{Document Structure}
+\begin{description}
+\item [Introduction:] contains an overall description of the content and the structure of the document;
+\item [Architecture:] this section contains:
+\begin{itemize}
+\item \textbf{Overview:} coarse view of the System i.e. the division in tiers;
+\item \textbf{High Level Components:} description of the main components of the application and their interaction;
+\item \textbf{Component View:} more detailed view of the components of the application;
+\item \textbf{Deploying View:} this section shows the execution architecture of the system representing the deployed software and hardware.
+\item \textbf{Runtime View:} shows the behaviour and the workflow of the System during some typical situation;
+\item \textbf{Component Interfaces:} describes the interfaces between the components.
+\end{itemize}
+\item [Algorithm Desing:] we will present some algorithms with pseudocode to show the locig of the most important parts of the System;
+\item [User Interface Design:] starting from the ideas we gathered in the RASD we will give a deeper description of the UI;
+\item [Requirements Traceability:] An explanation of how our architectural choices respect the requirements described in the RASD.
+\end{description}
+
+
+
+
+
 
 
