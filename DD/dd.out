@@ -7,3 +7,5 @@
 \BOOKMARK [0][-]{chapter.2}{Architecture}{}% 7
 \BOOKMARK [1][-]{section.2.1}{Overview}{chapter.2}% 8
 \BOOKMARK [1][-]{section.2.2}{High level components}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.1}{Tracking vehicle state}{section.2.2}% 10
+\BOOKMARK [1][-]{section.2.3}{Core component}{chapter.2}% 11
