@@ -1,0 +1,6 @@
+things to do:
+- sequence: reservation, drive, task assignment (fini)
+- interfaces (nico)
+- algos: discounts, worker choice (nico)
+- requirements (fini)
+- realign state charts
