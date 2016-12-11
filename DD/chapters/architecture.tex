@@ -29,19 +29,30 @@ The vehicle can also act as a client, sending requests to specific endpoints on 
 \section {Core component}
 Since the other components are quite simple and atomic, only the core component need some further analysis. The core has many functionalities that are divided in different components (for component diagram, see picture XXX):
 \begin{itemize}
+\item \textbf{Router} This component is responsible of receiving all the HTTP request to the APIs of the core and responding to them. It routes the received request from all the clients (driver, worker, admin) and from the vehicles to the specific component, so it provides all the interfaces with the external world. For every request, the router also communicates with the Authorization Manager to check if the calling user is authorized to perform certain actions.
 \item \textbf{Vehicle Manager} This component is responsible of tracking vehicle usage state (see state chart, picture XXX) but also vehicle internal state (e.g. position). This states are saved to the DB to provide persistency but also analytics. It provides an interface to the Drive Controller and the Task Manager to get information about the car and to update their state. In order to be updated about the state of the vehicles the Vehicle Manager keeps polling them.
-\item \textbf{Drive Controller} This component is responsible of processing Drivers requests (e.g. reservation, cancellation, termination). It communicates with the Vehicle Manager to update vehicle state. It also communicates with the Payment Manager to process Drivers payments. It is also responsible of computing the correct amount due at the end of a drive. Once the drive has ended and the data is sent to server by the vehicle it computea the base amount to pay and applies discounts. A pseudo-code implementation of the amount computing is provided in chapter XXX.
+\item \textbf{Drive Controller} This component is responsible of processing Drivers requests (e.g. reservation, cancellation, termination). It communicates with the Vehicle Manager to update vehicle state. It also communicates with the Payment Manager to process Drivers payments. It is also responsible of computing the correct amount due at the end of a drive. Once the drive has ended and the data is sent to server by the vehicle it computes the base amount to pay and applies discounts. A Node.JS implementation of the amount computing is provided in chapter XXX.
 \item \textbf{Payment Manager} It receives request to make a specific user pay a specific amount, process the payment and store it in the DB if the payment was successful. It is also responsible of verifying with the pre-authorization if the Driver can pay. 
-\item \textbf{Task Manager} It is primarily responsible of managing task allocation to workers, but also of processing Drivers reports and Admins special tasks queries. It exposes an interface to the Vehicle Manager too in order to allow it to perform automatic maintenance tasks on vehicles. A pseudo-code implementation of the worker choosing algorithm is provided in chapter XXX.
+\item \textbf{Task Manager} It is primarily responsible of managing task allocation to workers, but also of processing Drivers reports and Admins special tasks queries. It exposes an interface to the Vehicle Manager too in order to allow it to perform automatic maintenance tasks on vehicles. A Node.JS implementation of the worker choosing algorithm is provided in chapter XXX.
 \item \textbf{Authorization Manager} It manages most of the security of the system. It is responsible of Drivers and Workers signup and login. It is also responsible of verifying that every requests to the core are performed by an authorized user (e.g. Driver can't request Workers API). 
 \end{itemize}
 
-\includegraphics[width=13cm,keepaspectratio]{core}
+\includegraphics[width=13cm,keepaspectratio]{subcomponents}
 \includegraphics[width=13cm,keepaspectratio]{class}
 
-\subsection{Relevant State Charts}
+\section{Relevant State Charts}
 To give a deeper explaination of the dynamic behaviour of the model we add here some State Chart Diagrams, describing the lifecycle of vehicles, reservations and tasks:
 \includegraphics[width=13cm,keepaspectratio]{vehiclestate}
 \includegraphics[width=13cm,keepaspectratio]{reservationstate}
 \includegraphics[width=13cm,keepaspectratio]{taskstate}
+
+\section{Runtime View}
+Below 2 UML sequence diagrams are provided, to show the dynamic behaviour during a complete drive and during a task assignment and completion.
+
+\includegraphics[width=13cm,keepaspectratio]{drive}
+\includegraphics[width=13cm,keepaspectratio]{taskassignment}
+
+\section{Interfaces}
+Here the interface of all the subcomponents of the system are provided. The 4 interfaces of the Router are the ones exposed to clients as in the figure of section XXX.
+\includegraphics[width=13cm,keepaspectratio]{interfaces}
 

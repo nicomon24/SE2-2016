@@ -21,6 +21,16 @@
     stringstyle=\color{redstrings}
 }
 
+\lstdefinelanguage{JavaScript}{
+  keywords={break, case, catch, continue, debugger, default, delete, do, else, finally, for, function, if, in, instanceof, new, return, switch, this, throw, try, typeof, var, void, while, with},
+  keywordstyle=\color{bluekeywords},
+  morecomment=[l][\color{greencomments}]{//},
+  morecomment=[s][\color{greencomments}]{/*}{*/},
+  morestring=[b]',
+  morestring=[b]",
+  sensitive=true
+}
+
 \graphicspath{ {images/} }
 \DeclareGraphicsExtensions{.pdf,.png,.jpg}
 
@@ -50,6 +60,8 @@
 	\input{./chapters/introduction.tex}
 	\chapter{Architecture}\label{cap:Archi}
 	\input{./chapters/architecture.tex}
+	\chapter{Algorithm implementation}\label{cap:Algo}
+	\input{./chapters/algo.tex}
 	\chapter{Requirements}\label{cap:Req}
 	\input{./chapters/requirements.tex}
 	\end{flushleft}
