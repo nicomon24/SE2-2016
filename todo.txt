@@ -3,4 +3,4 @@ things to do:
 - interfaces (nico)
 - algos: discounts, worker choice (nico)
 - requirements (fini)
-- realign state charts
+- realign state charts	
