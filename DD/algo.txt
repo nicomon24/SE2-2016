@@ -1,0 +1,39 @@
+ALGORITMI DA INSERIRE IN DD
+
+var computeAmountDue = function(driveData){
+    //First compute the base amount (depende on the duration in minutes of the drive)
+    var baseAmount = data.durationInMinutes * STANDARD_MINUTE_FARE;
+    //Compute discounts as required
+    var discounts = 0;
+    if (data.detectedPassengers > 2){
+      discounts += baseAmount * 0.1;
+    }
+    if (data.endBatteryLevel > 50){
+      discounts += baseAmount * 0.2
+    }
+    if (isChargingArea(data.endPosition) && data.endIsCharging){
+        discounts += baseAmount * 0.3
+    }
+    if (nearestStationDistance(data.endPosition) > 3000 || data.endBatteryLevel < 20){
+        discounts -= baseAmount * 0.3
+    }
+    //Apply discount
+    return baseAmount - discounts;
+}
+
+var assignTaskToBestWorker = function(task){
+    var availableWorkers = getCurrentlyAvailableWorkers();
+    distance = {};
+    for (worker in availableWorker){
+        //Get distance between worker and vehicle with a step of 500meters
+        distance[worker.id] = getDistanceInMeters500(task.location, worker.location);
+    }
+    //Select the nearest, return array of equally distant workers
+    var nearestWorkers = getNearest(distance);
+    //In the nearest workers, select the one that was inactive for more time (worker.inactiveTime)
+    inaction = {}
+    for (worker in nearestWorkers) {
+        inaction[worker.id] = worker.inactiveTime;
+    }
+    return getMax(inaction);
+}
