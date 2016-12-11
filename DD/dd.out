@@ -10,10 +10,11 @@
 \BOOKMARK [2][-]{subsection.2.2.1}{Tracking vehicle state}{section.2.2}% 10
 \BOOKMARK [1][-]{section.2.3}{Core component}{chapter.2}% 11
 \BOOKMARK [1][-]{section.2.4}{Relevant State Charts}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.5}{Runtime View}{chapter.2}% 13
-\BOOKMARK [1][-]{section.2.6}{Interfaces}{chapter.2}% 14
-\BOOKMARK [0][-]{chapter.3}{Algorithm implementation}{}% 15
-\BOOKMARK [1][-]{section.3.1}{Amount due computation}{chapter.3}% 16
-\BOOKMARK [1][-]{section.3.2}{Task assignment}{chapter.3}% 17
-\BOOKMARK [0][-]{chapter.4}{Requirements}{}% 18
-\BOOKMARK [1][-]{section.4.1}{Requirement Traceability}{chapter.4}% 19
+\BOOKMARK [1][-]{section.2.5}{Deployment View}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.6}{Runtime View}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.7}{Interfaces}{chapter.2}% 15
+\BOOKMARK [0][-]{chapter.3}{Algorithm implementation}{}% 16
+\BOOKMARK [1][-]{section.3.1}{Amount due computation}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.2}{Task assignment}{chapter.3}% 18
+\BOOKMARK [0][-]{chapter.4}{Requirements}{}% 19
+\BOOKMARK [1][-]{section.4.1}{Requirement Traceability}{chapter.4}% 20
