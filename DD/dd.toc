@@ -7,14 +7,20 @@
 \contentsline {chapter}{\numberline {2}Architecture}{6}{chapter.2}
 \contentsline {section}{\numberline {2.1}Overview}{6}{section.2.1}
 \contentsline {section}{\numberline {2.2}High level components}{7}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Tracking vehicle state}{7}{subsection.2.2.1}
-\contentsline {section}{\numberline {2.3}Core component}{8}{section.2.3}
-\contentsline {section}{\numberline {2.4}Relevant State Charts}{11}{section.2.4}
-\contentsline {section}{\numberline {2.5}Deployment View}{13}{section.2.5}
-\contentsline {section}{\numberline {2.6}Runtime View}{13}{section.2.6}
-\contentsline {section}{\numberline {2.7}Interfaces}{15}{section.2.7}
-\contentsline {chapter}{\numberline {3}Algorithm implementation}{16}{chapter.3}
-\contentsline {section}{\numberline {3.1}Amount due computation}{16}{section.3.1}
-\contentsline {section}{\numberline {3.2}Task assignment}{16}{section.3.2}
-\contentsline {chapter}{\numberline {4}Requirements}{18}{chapter.4}
-\contentsline {section}{\numberline {4.1}Requirement Traceability}{18}{section.4.1}
+\contentsline {subsection}{\numberline {2.2.1}Tracking vehicle state}{8}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}Core component}{9}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Core Component Diagrams}{10}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}Relevant State Charts}{12}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Vehicle State Chart}{12}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Reservations State Chart}{13}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Task State Chart}{13}{subsection.2.4.3}
+\contentsline {section}{\numberline {2.5}Deployment View}{14}{section.2.5}
+\contentsline {section}{\numberline {2.6}Runtime View}{15}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Drive Sequence Diagram}{16}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Task Assignment Sequence Diagram}{17}{subsection.2.6.2}
+\contentsline {section}{\numberline {2.7}Interfaces}{18}{section.2.7}
+\contentsline {chapter}{\numberline {3}Algorithm implementation}{19}{chapter.3}
+\contentsline {section}{\numberline {3.1}Amount due computation}{19}{section.3.1}
+\contentsline {section}{\numberline {3.2}Task assignment}{19}{section.3.2}
+\contentsline {chapter}{\numberline {4}Requirements}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}Requirement Traceability}{21}{section.4.1}

@@ -6,7 +6,7 @@ The PowerEnjoy system is designed as a 3-tier application:
 \item \textbf{Presentation tier:} The presentation layer is realised with the 2 mobile applications (Driver and Worker), the web portal (Driver) and the Administrator application. The web portal is realised using EJS templating (server-side) and JQuery (client-side).
 \end{itemize}
 \includegraphics[width=13cm,keepaspectratio]{archi}
-
+\newpage
 \section{High level components}
 The high level structure of the System can be divided into 6 components. The main component is the \textbf{core}, that receives requests from \textbf{clients}, either \textbf{drivers}, \textbf{workers} and \textbf{administrators}; depending on the client type, the component provides different interfaces. 
 The core also communicates with the \textbf{DBMS} component, responsible of data persistence. 
@@ -21,11 +21,11 @@ The core implements all the business logic:
 All the communications by clients (Driver, Worker, Admin) are realised in a synchronous client-server architecture, where the core is the server. The communications with the DBMS are also client-server (the core is the client) and are realised using PostgreSQL protocol. The communications with the vehicles uses HTTP but the core is the client, while vehicles are servers.
 
 \includegraphics[width=13cm,keepaspectratio]{maincompo}
-
+\newpage
 \subsection{Tracking vehicle state}
 Tracking vehicle states requires a more detailed explanation. Our objective is to provide a simple interface for the core to communicate with vehicles (both tracking and controlling), so that the core can perform simple GET requests to endpoints (e.g. /vehicle/vehicle-id) to know their state (e.g. position, occupants) or POST request to perform actions on vehicles (e.g. open/close doors). Every vehicle is equipped with a wireless communication system, and is connected to the internet (so it has a public and static IP address). The core associate every vehicle ID with its IP address (and store this address in the DB), so every time a request to a specific vehicle is made, the core resolves the IP address of the requested vehicle. For security reasons, vehicles accept request only from the core IP (that is static). Every vehicle implements a simple on-board server, that answers to the core GET/POST requests, i.e. providing the vehicle's state or performing actions.
 The vehicle can also act as a client, sending requests to specific endpoints on the core to notify either the end of a drive or some detected issue. 
-
+\newpage
 \section {Core component}
 Since the other components are quite simple and atomic, only the core component need some further analysis. The core has many functionalities that are divided in different components (for component diagram, see picture XXX):
 \begin{itemize}
@@ -37,24 +37,30 @@ Since the other components are quite simple and atomic, only the core component 
 \item \textbf{Authorization Manager} It manages most of the security of the system. It is responsible of Drivers and Workers signup and login. It is also responsible of verifying that every requests to the core are performed by an authorized user (e.g. Driver can't request Workers API). 
 \end{itemize}
 
+\subsection{Core Component Diagrams}
 \includegraphics[width=13cm,keepaspectratio]{subcomponents}
-\includegraphics[width=13cm,keepaspectratio]{class}
-
+\includegraphics[width=13cm,keepaspectratio]{classborder}
+\newpage
 \section{Relevant State Charts}
 To give a deeper explaination of the dynamic behaviour of the model we add here some State Chart Diagrams, describing the lifecycle of vehicles, reservations and tasks:
+\subsection{Vehicle State Chart}
 \includegraphics[width=13cm,keepaspectratio]{vehiclestate}
+\subsection{Reservations State Chart}
 \includegraphics[width=13cm,keepaspectratio]{reservationstate}
+\subsection{Task State Chart}
 \includegraphics[width=13cm,keepaspectratio]{taskstate}
-
+\newpage
 \section{Deployment View}
+This section highlights the real deployment of the different components deepening the presentation already made in the previous paragraphs.
 \includegraphics[width=13cm,keepaspectratio]{deployment}
-
+\newpage
 \section{Runtime View}
 Below 2 UML sequence diagrams are provided, to show the dynamic behaviour during a complete drive and during a task assignment and completion.
-
-\includegraphics[width=13cm,keepaspectratio]{drive}
+\subsection{Drive Sequence Diagram}
+\includegraphics[width=12cm,keepaspectratio]{drive}
+\subsection{Task Assignment Sequence Diagram}
 \includegraphics[width=13cm,keepaspectratio]{taskassignment}
-
+\newpage
 \section{Interfaces}
 Here the interface of all the subcomponents of the system are provided. The 4 interfaces of the Router are the ones exposed to clients as in the figure of section XXX.
 \includegraphics[width=13cm,keepaspectratio]{interfaces}
