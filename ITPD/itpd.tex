@@ -1,0 +1,65 @@
+\documentclass[a4paper,12pt,oneside]{book} 
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\definecolor{bluekeywords}{rgb}{0.13,0.13,1}
+\definecolor{greencomments}{rgb}{0,0.5,0}
+\definecolor{turqusnumbers}{rgb}{0.17,0.57,0.69}
+\definecolor{redstrings}{rgb}{0.5,0,0}
+
+
+\lstdefinelanguage{Alloy}
+    {morekeywords={sig, fact, pred, run, for, extends},
+    keywordstyle=\color{bluekeywords},
+    sensitive=false,
+    morecomment=[l][\color{greencomments}]{///},
+    morecomment=[l][\color{greencomments}]{//},
+    morecomment=[s][\color{greencomments}]{{/*}{*/}},
+    morestring=[b]",
+    stringstyle=\color{redstrings}
+}
+
+\lstdefinelanguage{JavaScript}{
+  keywords={break, case, catch, continue, debugger, default, delete, do, else, finally, for, function, if, in, instanceof, new, return, switch, this, throw, try, typeof, var, void, while, with},
+  keywordstyle=\color{bluekeywords},
+  morecomment=[l][\color{greencomments}]{//},
+  morecomment=[s][\color{greencomments}]{/*}{*/},
+  morestring=[b]',
+  morestring=[b]",
+  sensitive=true
+}
+
+\graphicspath{ {images/} }
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries}{}{0pt}{\Large}
+
+\begin{document}
+	
+	\pagestyle{empty}\centering
+	\textsc{\Large Software Engineering 2 Project\\}
+	\textsc{Integration Test Plan Document}
+
+	\vfill
+
+	\textbf{\Huge PowerEnJoy}
+	
+	\vfill
+	\begin{center}	
+	\includegraphics[width=5cm,height=5cm,keepaspectratio]{polimi}
+	\end{center}
+	\textsc{\Large Team: Nico Montali, Enrico Fini}
+	
+	\tableofcontents
+
+	\begin{flushleft}
+	\chapter{Introduction}\label{cap:Intro}
+	\input{./chapters/introduction.tex}
+	\chapter{Integration strategy}\label{cap:Strategy}
+	\input{./chapters/strategy.tex}
+	\end{flushleft}
+
+\end{document}

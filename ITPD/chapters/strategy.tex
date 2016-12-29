@@ -1,0 +1,36 @@
+\section{Test items}
+The items are the integrations of the components previously described in [Design Document, DD, Paragraph 2.X]. 
+
+++++++++++++++++++++++++++++++++
+QUI SCRIVO PER PRENDERE APPUNTI
+
+Prima di tutto prendiamo il Unit Testing come già fatto (questo è l'integration)
+Dovremmo fare un bottom-up
+Riprendendo il grafico al paragrafo 2.7 la sequenza di integrazione potrebbe essere 
+
+Va modificato l'interfaces, manca la connessione da Router Vehicle a Drive Manager per notificare la fine di una drive, e tra router admin e Vehicle per le statistiche
+
+I1: Drive Manager -> Vehicle Manager
+Predisporre una stub dei pagamenti
+Driver al Drive Manager per testare: reservation, cancellation, start and stop
+
+I2: Drive Manager -> Payment Manager
+Testare tramite driver al drive manager: limite di un'ora con pagamento, fine di una drive con pagamento
+
+I3: Router Vehicle -> Drive Manager
+Testare la end drive dal veicolo, simulare con driver il veicolo stesso
+
+I4: Task Manager -> Vehicle Manager
+Testare tramite driver la creazione di un report e di un task diretto, l'update di un task, il cambio di stato del worker
+
+I5: Router Vehicle -> Task Manager, Authorization
+Testare la malfunction di un veicolo, driver veicolo 
+
+I6: Router Driver -> Task Manager, Drive Manager, Authorization
+Testare tutte le funzioni lato driver, simulando l'applicazione stessa
+
+I7: Router Worker -> Task Manager, Authorization
+Testare tutte le funzioni lato Worker
+
+I8: Router Admin -> Task Manager, Authorization
+Testare tutte le funzioni lato Admin
