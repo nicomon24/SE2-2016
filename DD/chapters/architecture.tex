@@ -19,21 +19,23 @@ The core implements all the business logic:
 \item Manages reports and automatic tasks then it allocates them to workers
 \end{itemize}
 All the communications by clients (Driver, Worker, Admin) are realised in a synchronous client-server architecture, where the core is the server. The communications with the DBMS are also client-server (the core is the client) and are realised using PostgreSQL protocol. The communications with the vehicles uses HTTP but the core is the client, while vehicles are servers.
+The communication with the DBMS and the data modelling will be handled using an external NodeJS library, Sequelize.JS. In this way, not only we are simplifying our job, but also rely on a community tested library, i.e. more reliable.
 
 \includegraphics[width=13cm,keepaspectratio]{maincompo}
 \newpage
-\subsection{Tracking vehicle state}
+\subsection{Tracking vehicle state and scope}
 Tracking vehicle states requires a more detailed explanation. Our objective is to provide a simple interface for the core to communicate with vehicles (both tracking and controlling), so that the core can perform simple GET requests to endpoints (e.g. /vehicle/vehicle-id) to know their state (e.g. position, occupants) or POST request to perform actions on vehicles (e.g. open/close doors). Every vehicle is equipped with a wireless communication system, and is connected to the internet (so it has a public and static IP address). The core associate every vehicle ID with its IP address (and store this address in the DB), so every time a request to a specific vehicle is made, the core resolves the IP address of the requested vehicle. For security reasons, vehicles accept request only from the core IP (that is static). Every vehicle implements a simple on-board server, that answers to the core GET/POST requests, i.e. providing the vehicle's state or performing actions.
 The vehicle can also act as a client, sending requests to specific endpoints on the core to notify either the end of a drive or some detected issue. 
+Since our main objective is to design the management system, we will take as an assumption the implementation of the vehicle's on-board system. So, we could consider the Vehicle themselves as external components of the system.
 \newpage
 \section {Core component}
-Since the other components are quite simple and atomic, only the core component need some further analysis. The core has many functionalities that are divided in different components (for component diagram, see picture XXX):
+Since the other components are quite simple and atomic, only the core component need some further analysis. The core has many functionalities that are divided in different components (for component diagram, see Paragraph 2.3.1):
 \begin{itemize}
 \item \textbf{Router} This component is responsible of receiving all the HTTP request to the APIs of the core and responding to them. It routes the received request from all the clients (driver, worker, admin) and from the vehicles to the specific component, so it provides all the interfaces with the external world. For every request, the router also communicates with the Authorization Manager to check if the calling user is authorized to perform certain actions.
-\item \textbf{Vehicle Manager} This component is responsible of tracking vehicle usage state (see state chart, picture XXX) but also vehicle internal state (e.g. position). This states are saved to the DB to provide persistency but also analytics. It provides an interface to the Drive Controller and the Task Manager to get information about the car and to update their state. In order to be updated about the state of the vehicles the Vehicle Manager keeps polling them.
-\item \textbf{Drive Controller} This component is responsible of processing Drivers requests (e.g. reservation, cancellation, termination). It communicates with the Vehicle Manager to update vehicle state. It also communicates with the Payment Manager to process Drivers payments. It is also responsible of computing the correct amount due at the end of a drive. Once the drive has ended and the data is sent to server by the vehicle it computes the base amount to pay and applies discounts. A Node.JS implementation of the amount computing is provided in chapter XXX.
+\item \textbf{Vehicle Manager} This component is responsible of tracking vehicle usage state (see state chart, paragraph 2.4.1) but also vehicle internal state (e.g. position). This states are saved to the DB to provide persistency but also analytics. It provides an interface to the Drive Controller and the Task Manager to get information about the car and to update their state. In order to be updated about the state of the vehicles the Vehicle Manager keeps polling them.
+\item \textbf{Drive Controller} This component is responsible of processing Drivers requests (e.g. reservation, cancellation, termination). It communicates with the Vehicle Manager to update vehicle state. It also communicates with the Payment Manager to process Drivers payments. It is also responsible of computing the correct amount due at the end of a drive. Once the drive has ended and the data is sent to server by the vehicle it computes the base amount to pay and applies discounts. A Node.JS implementation of the amount computing is provided in chapter 3.
 \item \textbf{Payment Manager} It receives request to make a specific user pay a specific amount, process the payment and store it in the DB if the payment was successful. It is also responsible of verifying with the pre-authorization if the Driver can pay. 
-\item \textbf{Task Manager} It is primarily responsible of managing task allocation to workers, but also of processing Drivers reports and Admins special tasks queries. It exposes an interface to the Vehicle Manager too in order to allow it to perform automatic maintenance tasks on vehicles. A Node.JS implementation of the worker choosing algorithm is provided in chapter XXX.
+\item \textbf{Task Manager} It is primarily responsible of managing task allocation to workers, but also of processing Drivers reports and Admins special tasks queries. It exposes an interface to the Vehicle Manager too in order to allow it to perform automatic maintenance tasks on vehicles. A Node.JS implementation of the worker choosing algorithm is provided in chapter 3.
 \item \textbf{Authorization Manager} It manages most of the security of the system. It is responsible of Drivers and Workers signup and login. It is also responsible of verifying that every requests to the core are performed by an authorized user (e.g. Driver can't request Workers API). 
 \end{itemize}
 
@@ -62,6 +64,6 @@ Below 2 UML sequence diagrams are provided, to show the dynamic behaviour during
 \includegraphics[width=13cm,keepaspectratio]{taskassignment}
 \newpage
 \section{Interfaces}
-Here the interface of all the subcomponents of the system are provided. The 4 interfaces of the Router are the ones exposed to clients as in the figure of section XXX.
+Here the interface of all the subcomponents of the system are provided. The 4 interfaces of the Router are the ones exposed to clients as in the figure of section 2.3.1.
 \includegraphics[width=13cm,keepaspectratio]{interfaces}
 
