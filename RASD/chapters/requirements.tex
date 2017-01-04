@@ -52,7 +52,7 @@ Given all the assumptions, domain properties and constraints from \underline{\au
 	\end{itemize}
 \item \textbf{[GOAL54]} Allow workers to update the state of the task (assigned, in progress, done)
 	\begin{itemize}
-	\item The System must provide, through the PowerEniWorker App, buttons to change the state of the assigned Task, also with an optional description. Task can be completed or unfixable.
+	\item The System must provide, through the PowerEniWorker App, buttons to change the state of the assigned Task, also with an optional description. Task can be marked  as completed or as unfixable.
 	\end{itemize}
 \item \textbf{[GOAL100]} Log in the administration console
 	\begin{itemize}
@@ -93,7 +93,7 @@ The fundamental part of the system is obviously the server-side application, tha
 This server-side application will be written in NodeJS and will use a PostgreSQL DB to store and retrieve data. This application will be deployed on Amazon AWS, in a replicated, distributed and load-balanced way (to grant availability, fault tolerance, scalability), with the DB on a dedicated cluster of servers. 
 Three endpoints will be provided, for the 3 categories of user that the System has: an endpoint for the Drivers, one for the Workers and one for the Admins. The Admin endpoint, for security reasons, will only be accessible from the inside PowerEni network (setting AWS firewall rules). 
 The web-portal (both for the Driver and for the Admin), will be provided by the same server-side application: it will be built using EJS templates inside NodeJS and JS for client-side scripting. 
-The mobile applications, both for Drivers and Workers, will be built natively for iOS, Android and Windows Phone. This applications will communicate with the backend using JSON format.\\
+The mobile applications, both for Drivers and Workers, will be built natively for iOS, Android and Windows Phone. This applications will communicate with the backend using JSON format. All these choices will be explained in detail and integrated in the Design Document.\\
 
 \newpage
 \subsection{Mobile application}
