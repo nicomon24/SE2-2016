@@ -1,0 +1,86 @@
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+
+
+\subsection{DriveManager, VehicleManager}
+
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{reserve(vehicle)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+  \hline
+  An inexistent Vehicle ID  & An InvalidArgumentException is raised \\
+  \hline
+  A "busy" Vehicle ID & A StateException is raised \\
+  \hline
+  Formally valid argument & The state of the vehicle is set to "busy" \\
+  \hline
+\end{tabular} 
+
+\bigbreak
+
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{cancel(reservation)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+  \hline
+  An inexistent Reservation ID & An InvalidArgumentException is raised \\
+  \hline
+  Formally valid argument & The Reservation is removed from the database \\
+  \hline
+\end{tabular} 
+
+\bigbreak
+
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{start(reservation)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+  \hline
+  An inexistent Reservation ID & An InvalidArgumentException is raised \\
+  \hline
+  Formally valid argument & The state of the Reservation is updated and a new Drive entry is created \\
+  \hline
+\end{tabular} 
+
+\bigbreak
+
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{stop(drive)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+  \hline
+  An inexistent Drive ID & An InvalidArgumentException is raised \\
+  \hline
+  Formally valid argument & The state of the Drive and the respective Reservation are updated  \\
+  \hline
+\end{tabular} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
