@@ -6,7 +6,7 @@
 
 \begin{tabular} {| L{7cm} | L{7cm} |}
   \hline
-  \multicolumn{2}{|c|}{reserve(vehicle)} \\
+  \multicolumn{2}{|c|}{reserve(user, vehicle)} \\
   \hline
   \textit{Input} & \textit{Effect} \\
   \hline
@@ -15,6 +15,8 @@
   An inexistent Vehicle ID  & An InvalidArgumentException is raised \\
   \hline
   A "busy" Vehicle ID & A StateException is raised \\
+    \hline
+  The ID of a user who has another active reservation & An invalidUserException is raised \\
   \hline
   Formally valid argument & The state of the vehicle is set to "busy" \\
   \hline
@@ -68,7 +70,39 @@
   \hline
 \end{tabular} 
 
+\subsection{DriveManager, PaymentManger}
 
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{reserve(user, vehicle)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+  \hline
+  An inexistent user ID  & An InvalidArgumentException is raised \\
+  \hline
+  The ID of a user who has another active reservation & An invalidUserException is raised \\
+  \hline
+  Formally valid argument & A fixed amount is pre-authorized from the user's credit card \\
+  \hline
+\end{tabular} 
+
+\bigbreak
+
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{stop(drive)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+  \hline
+  An inexistent Drive ID & An InvalidArgumentException is raised \\
+  \hline
+  Formally valid argument & The right amount is charged on the user's credit card  \\
+  \hline
+\end{tabular} 
 
 
 

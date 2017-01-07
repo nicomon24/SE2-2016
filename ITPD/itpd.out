@@ -13,6 +13,7 @@
 \BOOKMARK [1][-]{section.2.5}{Test items}{chapter.2}% 13
 \BOOKMARK [0][-]{chapter.3}{Individual Steps and Test Description}{}% 14
 \BOOKMARK [1][-]{subsection.3.0.1}{DriveManager, VehicleManager}{chapter.3}% 15
-\BOOKMARK [0][-]{chapter.4}{Tools and Test Equipment}{}% 16
-\BOOKMARK [0][-]{chapter.5}{Program Stubs and Test Data Required}{}% 17
-\BOOKMARK [0][-]{chapter.6}{Work history}{}% 18
+\BOOKMARK [2][-]{subsection.3.0.2}{DriveManager, PaymentManger}{subsection.3.0.1}% 16
+\BOOKMARK [0][-]{chapter.4}{Tools and Test Equipment}{}% 17
+\BOOKMARK [0][-]{chapter.5}{Program Stubs and Test Data Required}{}% 18
+\BOOKMARK [0][-]{chapter.6}{Work history}{}% 19
