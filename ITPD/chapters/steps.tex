@@ -104,17 +104,198 @@
   \hline
 \end{tabular} 
 
+\subsection{TaskManager, VehicleManger}
 
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{makeReport(data)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+  \hline
+  Data parameter contains an inexistent vehicle ID & An InvalidArgumentException is raised \\
+  \hline
+  Formally valid argument & A new report is created and the state of the respective vehicle is updated \\
+  \hline
+\end{tabular} 
 
+\bigbreak
 
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{makeTask(data)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+  \hline
+  Data parameter contains an inexistent vehicle ID & An InvalidArgumentException is raised \\
+  \hline
+  Formally valid argument & A new task is created and the state of the respective vehicle is updated \\
+  \hline
+\end{tabular} 
 
+\bigbreak
 
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{updateTask(task, state)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+  \hline
+  State parameter contains an inexistent state & An InvalidArgumentException is raised \\
+  \hline
+    Task parameter contains an inexistent task ID & An InvalidArgumentException is raised \\
+  \hline
+  Formally valid argument & The state of the task is updated, and eventually the state of the respective vehicle is updated \\
+  \hline
+\end{tabular} 
 
+\subsection{Router, DriveManager}
 
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{reserve(request)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+  \hline
+  Request parameter contains an inexistent User ID & An InvalidArgumentException is raised \\
+  \hline
+  Request parameter contains an inexistent Vehicle ID & An InvalidArgumentException is raised \\
+  \hline
+  Formally valid argument & A new Reservation is created \\
+  \hline
+\end{tabular} 
 
+\bigbreak
 
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{unlock(request)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+  \hline
+  Request parameter contains an inexistent Vehicle ID & An InvalidArgumentException is raised \\
+  \hline
+  Formally valid argument & An unlock command is sent to the vehicle \\
+  \hline
+\end{tabular} 
 
+\bigbreak
 
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{cancel(request)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+  \hline
+  Request parameter contains an inexistent Reservation ID & an InvalidArgumentException is raised \\
+  \hline
+  Formally valid argument & The Reservation is cancelled \\
+  \hline
+\end{tabular} 
 
+\subsection{Router, VehicleManager}
+
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{endDrive(request)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+  \hline
+  Request parameter contains an inexistent Drive ID & an InvalidArgumentException is raised \\
+  \hline
+  Formally valid argument & The Drive is stopped and the Vehicle status is updated \\
+  \hline
+\end{tabular} 
+
+\subsection{Router, TaskManager}
+
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{report(request)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+  \hline
+  Request parameter contains an inexistent Vehicle ID & an InvalidArgumentException is raised \\
+  \hline
+  Formally valid argument & A Report is created \\
+  \hline
+\end{tabular} 
+
+\bigbreak
+
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{changeMyState(request) (for Workers only)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+  \hline
+  Request parameter contains an inexistent Worker ID & an InvalidArgumentException is raised \\
+  \hline
+  Formally valid argument & The state of the Worker is updated \\
+  \hline
+\end{tabular} 
+
+\bigbreak
+
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{updateTask(request) (for Workers only)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+  \hline
+  Request parameter contains an inexistent Task ID & an InvalidArgumentException is raised \\
+  \hline
+  Formally valid argument & The state of the Task is updated \\
+  \hline
+\end{tabular} 
+
+\bigbreak
+
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{manageWorker(worker, data) (for Admins only)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+  \hline
+  Request parameter contains an inexistent Worker ID & an InvalidArgumentException is raised \\
+  \hline
+  Formally valid argument & ??? \\
+  \hline
+\end{tabular} 
+
+\bigbreak
+
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{makeTask() (for Admins only)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+  \hline
+  Formally valid argument & A new Task is created \\
+  \hline
+\end{tabular} 
 
 

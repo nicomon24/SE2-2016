@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.4)  7 JAN 2017 16:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.4)  8 JAN 2017 19:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -297,7 +297,7 @@ LaTeX Info: Redefining \nameref on input line 42.
 \@outlinefile=\write3
 \openout3 = `itpd.out'.
 
- <images/polimi.png, id=80, 1204.5pt x 483.30562pt>
+ <images/polimi.png, id=96, 1204.5pt x 483.30562pt>
 File: images/polimi.png Graphic file (type png)
 
 <use images/polimi.png>
@@ -382,19 +382,79 @@ Overfull \hbox (33.53854pt too wide) in paragraph at lines 93--106
 [][]  
  []
 
-) [8]
+
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 109--122
+[]  
+ []
+
+
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 125--138
+[][]  
+ []
+
+[8]
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 141--156
+[][]  
+ []
+
+
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 159--174
+[]  
+ []
+
+
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 177--190
+[][]  
+ []
+
+
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 193--206
+[][]  
+ []
+
+[9]
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 209--222
+[]  
+ []
+
+
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 225--238
+[]  
+ []
+
+
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 241--254
+[][]  
+ []
+
+
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 257--270
+[][]  
+ []
+
+
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 273--286
+[][]  
+ []
+
+[10]
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 289--300
+[][]  
+ []
+
+) [11]
 Chapter 4.
-(./chapters/tools.tex) [9
+(./chapters/tools.tex) [12
 
 ]
 Chapter 5.
-(./chapters/test.tex) [10
+(./chapters/test.tex) [13
 
 ]
 Chapter 6.
 (./chapters/work.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 75.
- [11
+ [14
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
@@ -402,26 +462,30 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 75.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 75.
 Package rerunfilecheck Info: File `itpd.out' has not changed.
-(rerunfilecheck)             Checksum: 2186D6CD068ADABD2A4B16928D5C9E6D;1268.
+(rerunfilecheck)             Checksum: 4A979020430D6889C620FA54F9F655C8;1591.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
  ) 
 Here is how much of TeX's memory you used:
- 7107 strings out of 493014
- 103646 string characters out of 6133351
- 201441 words of memory out of 5000000
- 10550 multiletter control sequences out of 15000+600000
+ 7118 strings out of 493014
+ 103803 string characters out of 6133351
+ 203442 words of memory out of 5000000
+ 10554 multiletter control sequences out of 15000+600000
  9150 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,9n,35p,544b,517s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,9n,35p,544b,541s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
 /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on itpd.pdf (11 pages, 175626 bytes).
+Output written on itpd.pdf (14 pages, 180524 bytes).
 PDF statistics:
- 180 PDF objects out of 1000 (max. 8388607)
- 159 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 500000)
- 158 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 216 PDF objects out of 1000 (max. 8388607)
+ 192 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 500000)
+ 190 words of extra memory for PDF output out of 10000 (max. 10000000)
 
