@@ -2,60 +2,38 @@
 Integration Testing can start as long as the entry criteria stated below are met. First of all, the RASD and the DD documents must have been completed and accepted, since we need a complete view of the problem and the design of the system. \newline
 Also, integration should start only when the estimated percentage of completion of the various components met this requirement
 \begin{itemize}
-\item TODO
+\item 95\% of the Core functionalities
+\item 50\% of the Client functionalities
 \end{itemize}
-This percentage describe only the entry criteria for the integration testing phase, not the actual integration test of the component (obviously possible only when the component is almost complete). 
+This percentage describe only the entry criteria for the integration testing phase, not the actual integration test of the component (obviously possible only when the component is almost complete). The relatively high percentage of the Core components is due to the high correlation between components, while the relatively low percentage regarding the clients is due to the relative simplicity of them w.r.t the Core.
 
 \section{Elements to be integrated}
 In the DD, the structure of the system is clearly divided into high-level components, e.g. the Core and Clients, and lower-level component, i.e. the subcomponents of the Core. So, the integration phase will be performed at different level of abstraction. Given that the lower-level components compose the essential high-level component of the system (the Core), we will first integrate the lower-level and then proceed to higher levels. \newline
 The first critical component of the system is the Data Access Layer, that is implemented through an external Node.JS library (Sequelize, DD v1.1). For this reason, all the CRUD operations (Create, Read, Update, Delete) on the DB are considered as already tested. The usage of these operations inside components are consequentially already tested in Unit Testing.
 The lower-level components to be tested in the first phase are: \textbf{Vehicle Manager, Drive Manager, Payment Manager, Router, Authorization Manager and Task Manager}.
 \newline
-TODO: describe high level components
+The high-level components of the system are all on the same level w.r.t. the Core. We will integrate \textbf{Android driver app, iOS driver app, driver web portal, Android worker app, iOS worker app, administrator web portal}.
 
 \section{Integration Testing Strategy}
 We are going to use mainly a bottom-up approach during the integration testing of lower-level components. So, we will start integrating the components that does not depend on other components or depend on already developed components. Since we have many simple components that are very independent (Vehicle Manager, Payment Manager, Authorization Manager), this approach gives us the advantage to begin the testing phase earlier and start to integrate as soon as components are ready and functional. 
 The second phase will follow a critical-first approach, since the components here are only dependent to the Core. So, the order will reflect the risk represented by the incorrect behaviour of the component.
 
 \section{Sequence of Integration}
+This section contains the detailed integration sequence, starting from the Core subsystem in paragraph 2.4.1 to the entire system integration in paragraph 2.4.2
 
 \subsection{Software integration}
+\subsubsection{STEP I1: DriveManager $\rightarrow$ VehicleManager}
+This integration contains the most important components in our system. All the DriveManager functionalities are tested. Since DriveManager uses also PaymentManager, but we still want to integrate one-by-one, we will use a PaymentManager stub, that simply simulate a payment and the availability check (always replying in a correct way). We will need a driver to call the relevant DriveManager's functions.
+\subsubsection{STEP I2: DriveManager $\rightarrow$ PaymentManager}
+The previous PaymentManager stub is replaced by the real component, and all the functionalities that require a payment are tested. We also will need a driver to call these DriveManager's functions.
+\subsubsection{STEP I3: TaskManager $\rightarrow$ VehicleManager}
+The integration proceed to TaskManager, which only depends on VehicleManager. A driver to call TaskManager interface is required.
+\subsubsection{STEP I4: Router $\rightarrow$ AuthorizationManager}
+TODO
+\subsubsection{STEP I4: Router $\rightarrow$ DriveManager}
+TODO
 
 \subsection{Subsystem integration}
 
 \section{Test items}
 The items are the integrations of the components previously described in [Design Document, DD, Paragraph 2.X]. 
-
-++++++++++++++++++++++++++++++++
-QUI SCRIVO PER PRENDERE APPUNTI
-
-Prima di tutto prendiamo il Unit Testing come già fatto (questo è l'integration)
-Dovremmo fare un bottom-up
-Riprendendo il grafico al paragrafo 2.7 la sequenza di integrazione potrebbe essere 
-
-Va modificato l'interfaces, manca la connessione da Router Vehicle a Drive Manager per notificare la fine di una drive, e tra router admin e Vehicle per le statistiche
-
-I1: Drive Manager -> Vehicle Manager
-Predisporre una stub dei pagamenti
-Driver al Drive Manager per testare: reservation, cancellation, start and stop
-
-I2: Drive Manager -> Payment Manager
-Testare tramite driver al drive manager: limite di un'ora con pagamento, fine di una drive con pagamento
-
-I3: Router Vehicle -> Drive Manager
-Testare la end drive dal veicolo, simulare con driver il veicolo stesso
-
-I4: Task Manager -> Vehicle Manager
-Testare tramite driver la creazione di un report e di un task diretto, l'update di un task, il cambio di stato del worker
-
-I5: Router Vehicle -> Task Manager, Authorization
-Testare la malfunction di un veicolo, driver veicolo 
-
-I6: Router Driver -> Task Manager, Drive Manager, Authorization
-Testare tutte le funzioni lato driver, simulando l'applicazione stessa
-
-I7: Router Worker -> Task Manager, Authorization
-Testare tutte le funzioni lato Worker
-
-I8: Router Admin -> Task Manager, Authorization
-Testare tutte le funzioni lato Admin
