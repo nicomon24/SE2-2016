@@ -11,14 +11,15 @@
 \BOOKMARK [2][-]{subsection.2.4.2}{Subsystem integration}{section.2.4}% 11
 \BOOKMARK [1][-]{section.2.5}{Test items}{chapter.2}% 12
 \BOOKMARK [0][-]{chapter.3}{Individual Steps and Test Description}{}% 13
-\BOOKMARK [1][-]{subsection.3.0.1}{DriveManager, VehicleManager}{chapter.3}% 14
-\BOOKMARK [2][-]{subsection.3.0.2}{DriveManager, PaymentManger}{subsection.3.0.1}% 15
-\BOOKMARK [2][-]{subsection.3.0.3}{TaskManager, VehicleManger}{subsection.3.0.1}% 16
-\BOOKMARK [2][-]{subsection.3.0.4}{Router, DriveManager}{subsection.3.0.1}% 17
-\BOOKMARK [2][-]{subsection.3.0.5}{Router, VehicleManager}{subsection.3.0.1}% 18
-\BOOKMARK [2][-]{subsection.3.0.6}{Router, TaskManager}{subsection.3.0.1}% 19
-\BOOKMARK [0][-]{chapter.4}{Tools and Test Equipment}{}% 20
-\BOOKMARK [0][-]{chapter.5}{Program Stubs and Test Data Required}{}% 21
-\BOOKMARK [1][-]{section.5.1}{DRAFT OF STUBS}{chapter.5}% 22
-\BOOKMARK [1][-]{section.5.2}{DRAFT OF DRIVERS}{chapter.5}% 23
-\BOOKMARK [0][-]{chapter.6}{Work review}{}% 24
+\BOOKMARK [1][-]{subsection.3.0.1}{Router, AuthorizationManager}{chapter.3}% 14
+\BOOKMARK [2][-]{subsection.3.0.2}{DriveManager, VehicleManager}{subsection.3.0.1}% 15
+\BOOKMARK [2][-]{subsection.3.0.3}{DriveManager, PaymentManger}{subsection.3.0.1}% 16
+\BOOKMARK [2][-]{subsection.3.0.4}{TaskManager, VehicleManger}{subsection.3.0.1}% 17
+\BOOKMARK [2][-]{subsection.3.0.5}{Router, DriveManager}{subsection.3.0.1}% 18
+\BOOKMARK [2][-]{subsection.3.0.6}{Router, VehicleManager}{subsection.3.0.1}% 19
+\BOOKMARK [2][-]{subsection.3.0.7}{Router, TaskManager}{subsection.3.0.1}% 20
+\BOOKMARK [0][-]{chapter.4}{Tools and Test Equipment}{}% 21
+\BOOKMARK [0][-]{chapter.5}{Program Stubs and Test Data Required}{}% 22
+\BOOKMARK [1][-]{section.5.1}{DRAFT OF STUBS}{chapter.5}% 23
+\BOOKMARK [1][-]{section.5.2}{DRAFT OF DRIVERS}{chapter.5}% 24
+\BOOKMARK [0][-]{chapter.6}{Work review}{}% 25

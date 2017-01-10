@@ -1,5 +1,61 @@
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
+\subsection{Router, AuthorizationManager}
+
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{login(data)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+  \hline
+  Data parameter contains an inexistent username  & An InvalidArgumentException is raised \\
+   \hline
+    Data parameter contains empty username or password & An InvalidArgumentException is raised \\
+   \hline
+  Data parameter contains a valid username but password does not correspond & Returns False \\
+  \hline
+  Data parameter contains valid username and password corresponds & Returns True \\
+  \hline
+\end{tabular} 
+
+\bigbreak
+
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{logout(data)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+  \hline
+  Data parameter contains an inexistent username  & An InvalidArgumentException is raised \\
+   \hline
+    Data parameter contains empty username & An InvalidArgumentException is raised \\
+  \hline
+  Data parameter contains valid username & Current session is deleted \\
+  \hline
+\end{tabular} 
+
+\bigbreak
+
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{signup(data)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+     \hline
+    Data parameter contains empty username or password & An InvalidArgumentException is raised \\
+  \hline
+  Data parameter contains a username which does not comply with the regular expression & An InvalidArgumentException is raised \\
+  \hline
+  Data parameter contains valid username and password & Returns True \\
+  \hline
+\end{tabular} 
+
 \subsection{DriveManager, VehicleManager}
 
 \begin{tabular} {| L{7cm} | L{7cm} |}
@@ -278,7 +334,7 @@ TODO manca check availability
   \hline
   A null parameter & A NullArgumentException is raised \\
   \hline
-  Request parameter contains an inexistent Worker ID & an InvalidArgumentException is raised \\
+  Request parameter contains an inexistent Worker ID & An InvalidArgumentException is raised \\
   \hline
   Formally valid argument & ??? \\
   \hline
