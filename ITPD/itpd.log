@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.4)  10 JAN 2017 15:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.4)  11 JAN 2017 13:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -379,106 +379,161 @@ Overfull \hbox (33.53854pt too wide) in paragraph at lines 43--58
 
 ]
 Overfull \hbox (33.53854pt too wide) in paragraph at lines 61--78
-[]  
- []
-
-
-Overfull \hbox (33.53854pt too wide) in paragraph at lines 81--94
 [][]  
  []
 
 
-Overfull \hbox (33.53854pt too wide) in paragraph at lines 97--110
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 81--98
 [][]  
  []
 
 
-Overfull \hbox (33.53854pt too wide) in paragraph at lines 113--126
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 101--118
 [][]  
  []
 
 [9]
-Overfull \hbox (33.53854pt too wide) in paragraph at lines 129--144
-[]  
- []
-
-
-Overfull \hbox (33.53854pt too wide) in paragraph at lines 149--162
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 121--138
 [][]  
  []
 
 
-Overfull \hbox (33.53854pt too wide) in paragraph at lines 165--178
-[]  
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 141--158
+[][]  
  []
 
 
-Overfull \hbox (33.53854pt too wide) in paragraph at lines 181--194
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 161--178
 [][]  
  []
 
 [10]
-Overfull \hbox (33.53854pt too wide) in paragraph at lines 197--212
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 181--198
 [][]  
  []
 
 
-Overfull \hbox (33.53854pt too wide) in paragraph at lines 215--230
-[]  
- []
-
-
-Overfull \hbox (33.53854pt too wide) in paragraph at lines 233--246
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 201--218
 [][]  
  []
 
 
-Overfull \hbox (33.53854pt too wide) in paragraph at lines 249--262
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 221--238
 [][]  
  []
 
 [11]
-Overfull \hbox (33.53854pt too wide) in paragraph at lines 265--278
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 241--258
+[][]  
+ []
+
+
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 261--278
+[][]  
+ []
+
+
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 281--298
 []  
- []
-
-
-Overfull \hbox (33.53854pt too wide) in paragraph at lines 281--294
-[]  
- []
-
-
-Overfull \hbox (33.53854pt too wide) in paragraph at lines 297--310
-[][]  
- []
-
-
-Overfull \hbox (33.53854pt too wide) in paragraph at lines 313--326
-[][]  
- []
-
-
-Overfull \hbox (33.53854pt too wide) in paragraph at lines 329--342
-[][]  
  []
 
 [12]
-Overfull \hbox (33.53854pt too wide) in paragraph at lines 345--356
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 301--314
 [][]  
  []
 
-) [13]
+
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 317--330
+[][]  
+ []
+
+
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 333--346
+[][]  
+ []
+
+
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 349--364
+[]  
+ []
+
+[13]
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 367--380
+[][]  
+ []
+
+
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 383--396
+[]  
+ []
+
+
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 399--412
+[][]  
+ []
+
+
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 415--430
+[][]  
+ []
+
+[14]
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 433--448
+[]  
+ []
+
+
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 451--464
+[][]  
+ []
+
+
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 467--480
+[][]  
+ []
+
+
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 483--496
+[]  
+ []
+
+[15]
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 499--512
+[]  
+ []
+
+
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 515--528
+[][]  
+ []
+
+
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 531--544
+[][]  
+ []
+
+
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 547--560
+[][]  
+ []
+
+
+Overfull \hbox (33.53854pt too wide) in paragraph at lines 563--574
+[][]  
+ []
+
+) [16] [17]
 Chapter 4.
-(./chapters/tools.tex) [14
+(./chapters/tools.tex) [18
 
 ]
 Chapter 5.
-(./chapters/test.tex) [15
+(./chapters/test.tex) [19
 
 ]
 Chapter 6.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 86.
-[16
+[20
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
@@ -486,12 +541,12 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 86.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 86.
 Package rerunfilecheck Info: File `itpd.out' has not changed.
-(rerunfilecheck)             Checksum: D15EF0B8291207D50008CB9D9621F58F;1738.
+(rerunfilecheck)             Checksum: AA51FBA0E398D05A71DCE832867D3549;1807.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 86.
  ) 
 Here is how much of TeX's memory you used:
- 7135 strings out of 493014
- 104058 string characters out of 6133351
+ 7139 strings out of 493014
+ 104086 string characters out of 6133351
  203416 words of memory out of 5000000
  10562 multiletter control sequences out of 15000+600000
  9150 words of font info for 32 fonts, out of 8000000 for 9000
@@ -502,10 +557,10 @@ Here is how much of TeX's memory you used:
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
 /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on itpd.pdf (16 pages, 185420 bytes).
+Output written on itpd.pdf (20 pages, 190923 bytes).
 PDF statistics:
- 244 PDF objects out of 1000 (max. 8388607)
- 217 compressed objects within 3 object streams
- 48 named destinations out of 1000 (max. 500000)
+ 262 PDF objects out of 1000 (max. 8388607)
+ 231 compressed objects within 3 object streams
+ 52 named destinations out of 1000 (max. 500000)
  206 words of extra memory for PDF output out of 10000 (max. 10000000)
 

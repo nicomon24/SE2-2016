@@ -56,6 +56,226 @@
   \hline
 \end{tabular} 
 
+\bigbreak
+
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{manageWorker(data)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+     \hline
+    Data parameter contains empty Admin ID & An InvalidArgumentException is raised \\
+    \hline
+      Data parameter contains an inexistent Admin ID & An InvalidArgumentException is raised \\
+      \hline
+  Data parameter contains valid Admin ID but invalid Token & Access denied \\
+    \hline
+  Data parameter contains valid Admin ID and a valid Token & Access granted \\
+  \hline
+\end{tabular} 
+
+\bigbreak
+
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{getStatistics(data)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+     \hline
+    Data parameter contains empty Admin ID & An InvalidArgumentException is raised \\
+      \hline
+      Data parameter contains an inexistent Admin ID & An InvalidArgumentException is raised \\
+      \hline
+  Data parameter contains valid Admin ID but invalid Token & Access denied \\
+    \hline
+  Data parameter contains valid Admin ID and a valid Token & Access granted \\
+  \hline
+\end{tabular} 
+
+\bigbreak
+
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{makeTask(data)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+     \hline
+    Data parameter contains empty Admin ID & An InvalidArgumentException is raised \\
+            \hline
+      Data parameter contains an inexistent Admin ID & An InvalidArgumentException is raised \\
+      \hline
+  Data parameter contains valid Admin ID but invalid Token & Access denied \\
+    \hline
+  Data parameter contains valid Admin ID and a valid Token & Access granted \\
+  \hline
+\end{tabular} 
+
+\bigbreak
+
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{endDrive(data)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+     \hline
+    Data parameter contains empty Vehicle ID & An InvalidArgumentException is raised \\
+            \hline
+      Data parameter contains an inexistent Vehicle ID & An InvalidArgumentException is raised \\
+     \hline
+  Data parameter contains valid Worker ID but invalid Token & Access denied \\
+    \hline
+  Data parameter contains valid Vehicle ID and a valid Token & Access granted \\
+  \hline
+\end{tabular} 
+
+\bigbreak
+
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{report(data)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+     \hline
+    Data parameter contains empty Vehicle ID & An InvalidArgumentException is raised \\
+        \hline
+      Data parameter contains an inexistent Vehicle ID & An InvalidArgumentException is raised \\
+     \hline
+  Data parameter contains valid Worker ID but invalid Token & Access denied \\
+    \hline
+  Data parameter contains valid Vehicle ID and a valid Token & Access granted \\
+  \hline
+\end{tabular} 
+
+\bigbreak
+
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{changeMyState(data)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+     \hline
+    Data parameter contains empty Worker ID & An InvalidArgumentException is raised \\
+        \hline
+      Data parameter contains an inexistent Worker ID & An InvalidArgumentException is raised \\
+     \hline
+  Data parameter contains valid Worker ID but invalid Token & Access denied \\
+    \hline
+  Data parameter contains valid Worker ID and a valid Token & Access granted \\
+  \hline
+\end{tabular} 
+
+\bigbreak
+
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{updateTask(data)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+     \hline
+    Data parameter contains empty Worker ID & An InvalidArgumentException is raised \\
+     \hline
+      Data parameter contains an inexistent Worker ID & An InvalidArgumentException is raised \\
+     \hline
+  Data parameter contains valid Worker ID but invalid Token & Access denied \\
+    \hline
+  Data parameter contains valid Worker ID and a valid Token & Access granted \\
+  \hline
+\end{tabular} 
+
+\bigbreak
+
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{reserve(data)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+     \hline
+    Data parameter contains empty Driver ID & An InvalidArgumentException is raised \\
+        \hline
+      Data parameter contains an inexistent Driver ID & An InvalidArgumentException is raised \\
+     \hline
+  Data parameter contains valid Driver ID but invalid Token & Access denied \\
+    \hline
+  Data parameter contains valid Driver ID and a valid Token & Access granted \\
+  \hline
+\end{tabular} 
+
+\bigbreak
+
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{unlock(data)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+     \hline
+    Data parameter contains empty Driver ID & An InvalidArgumentException is raised \\
+    \hline
+      Data parameter contains an inexistent Driver ID & An InvalidArgumentException is raised \\
+     \hline
+  Data parameter contains valid Driver ID but invalid Token & Access denied \\
+    \hline
+  Data parameter contains valid Driver ID and a valid Token & Access granted \\
+  \hline
+\end{tabular} 
+
+\bigbreak
+
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{CancelReservation(data)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+     \hline
+    Data parameter contains empty Driver ID & An InvalidArgumentException is raised \\
+    \hline
+      Data parameter contains an inexistent Driver ID & An InvalidArgumentException is raised \\
+     \hline
+  Data parameter contains valid Driver ID but an invalid Token & Access denied \\
+    \hline
+  Data parameter contains valid Driver ID and a valid Token & Access granted \\
+  \hline
+\end{tabular} 
+
+\bigbreak
+
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{report(data)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+     \hline
+    Data parameter contains empty Driver ID & An InvalidArgumentException is raised \\
+    \hline
+      Data parameter contains an inexistent Driver ID & An InvalidArgumentException is raised \\
+     \hline
+  Data parameter contains valid Driver ID but an invalid Token & Access denied \\
+    \hline
+  Data parameter contains valid Driver ID and a valid Token & Access granted \\
+  \hline
+\end{tabular} 
+
 \subsection{DriveManager, VehicleManager}
 
 \begin{tabular} {| L{7cm} | L{7cm} |}
@@ -142,8 +362,6 @@
   \hline
 \end{tabular} 
 
-TODO manca check availability
-
 \bigbreak
 
 \begin{tabular} {| L{7cm} | L{7cm} |}
@@ -210,7 +428,7 @@ TODO manca check availability
   \hline
 \end{tabular} 
 
-\subsection{Router, DriveManager}
+\subsection{Router + AuthorizationManager, DriveManager}
 
 \begin{tabular} {| L{7cm} | L{7cm} |}
   \hline
@@ -260,7 +478,7 @@ TODO manca check availability
   \hline
 \end{tabular} 
 
-\subsection{Router, VehicleManager}
+\subsection{Router + AuthorizationManager, VehicleManager}
 
 \begin{tabular} {| L{7cm} | L{7cm} |}
   \hline
@@ -276,7 +494,7 @@ TODO manca check availability
   \hline
 \end{tabular} 
 
-\subsection{Router, TaskManager}
+\subsection{Router + AuthorizationManager, TaskManager}
 
 \begin{tabular} {| L{7cm} | L{7cm} |}
   \hline
