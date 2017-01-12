@@ -25,22 +25,36 @@ The communication with the DBMS and the data modelling will be handled using an 
 \newpage
 \subsection{Tracking vehicle state and scope}
 Tracking vehicle states requires a more detailed explanation. Our objective is to provide a simple interface for the core to communicate with vehicles (both tracking and controlling), so that the core can perform simple GET requests to endpoints (e.g. /vehicle/vehicle-id) to know their state (e.g. position, occupants) or POST request to perform actions on vehicles (e.g. open/close doors). Every vehicle is equipped with a wireless communication system, and is connected to the internet (so it has a public and static IP address). The core associate every vehicle ID with its IP address (and store this address in the DB), so every time a request to a specific vehicle is made, the core resolves the IP address of the requested vehicle. For security reasons, vehicles accept request only from the core IP (that is static). Every vehicle implements a simple on-board server, that answers to the core GET/POST requests, i.e. providing the vehicle's state or performing actions.
-The vehicle can also act as a client, sending requests to specific endpoints on the core to notify either the end of a drive or some detected issue. 
-Since our main objective is to design the management system, we will take as an assumption the implementation of the vehicle's on-board system. So, we could consider the Vehicle themselves as external components of the system.
+Since our main objective is to design the management system, we will take as an assumption the implementation of the vehicle's on-board system. So, we could consider the Vehicle themselves as external components of the system. The team that developed the on-board system, provided us the following APIs:
+\begin{itemize}
+	\item \textbf{GET /state} returns the current state of the vehicle. The state is a JSON object containing \begin{itemize}
+		\item Current position of the vehicle
+		\item Current battery charge
+		\item Maintenance report (if any issue is found)
+		\end{itemize} 
+	\item \textbf{GET /drive} returns the log of the last drive. This log includes \begin{itemize}
+		\item Drive time
+		\item Drive length
+		\item Start and stop positions
+		\item Number of occupants
+		\end{itemize}
+	\item \textbf{POST /unlock} unlocks the car and start logging the drive
+	\item \textbf{POST /lock} locks the car and stop logging
+	\item \textbf{POST /maintenance/[on-off]} enable or disable maintenance mode, where the car disables all is security systems. 
+\end{itemize}
 \newpage
 \section {Core component}
 Since the other components are quite simple and atomic, only the core component need some further analysis. The core has many functionalities that are divided in different components (for component diagram, see Paragraph 2.3.1):
 \begin{itemize}
-\item \textbf{Router} This component is responsible of receiving all the HTTP request to the APIs of the core and responding to them. It routes the received request from all the clients (driver, worker, admin) and from the vehicles to the specific component, so it provides all the interfaces with the external world. For every request, the router also communicates with the Authorization Manager to check if the calling user is authorized to perform certain actions. The Router always receives HTTP data as input ant parses it. All the subsequent calls to subcomponents also contains the identifier of the user that has called it. The recognize this user, the Router calls a method (checkPermission) on the AuthorizationManager.
-\item \textbf{Vehicle Manager} This component is responsible of tracking vehicle usage state (see state chart, paragraph 2.4.1) but also vehicle internal state (e.g. position). This states are saved to the DB to provide persistency but also analytics. It provides an interface to the Drive Controller and the Task Manager to get information about the car and to update their state. In order to be updated about the state of the vehicles the Vehicle Manager keeps polling them.
-\item \textbf{Drive Controller} This component is responsible of processing Drivers requests (e.g. reservation, cancellation, termination). It communicates with the Vehicle Manager to update vehicle state. It also communicates with the Payment Manager to process Drivers payments. It is also responsible of computing the correct amount due at the end of a drive. Once the drive has ended and the data is sent to server by the vehicle it computes the base amount to pay and applies discounts. A Node.JS implementation of the amount computing is provided in chapter 3.
+\item \textbf{Router} This component is responsible of receiving all the HTTP request to the APIs of the core and responding to them. It routes the received request from all the clients (driver, worker, admin) and from the vehicles to the specific component, so it provides all the interfaces with the external world. For every request, the router also communicates with the Authorization Manager to check if the calling user is authorized to perform certain actions. The Router always receives HTTP data as input and parses it. All the subsequent calls to subcomponents also contains the identifier of the user that has called it. The recognize this user, the Router calls a method (checkPermission) on the AuthorizationManager.
+\item \textbf{Vehicle Manager} This component is responsible of tracking vehicle usage state (see state chart, paragraph 2.4.1) but also vehicle internal state (e.g. position). This states are saved to the DB to provide persistency but also analytics. It provides an interface to the Drive Controller and the Task Manager to get information about the car and to update their state. In order to be updated about the state of the vehicles the Vehicle Manager keeps polling them. The vehicle can also answer with a report of some issue, so the VehicleManager is also able to call TaskManager to generate a new report.
+\item \textbf{Drive Controller} This component is responsible of processing Drivers requests (e.g. reservation, cancellation, termination). It communicates with the Vehicle Manager to update vehicle state. It also communicates with the Payment Manager to process Drivers payments. It is also responsible of computing the correct amount due at the end of a drive. Once the drive has ended when the user has pressed the button on the vehicle, the DriveManager requests to the VehicleManager the log of the drive, it computes the base amount to pay and applies discounts. A Node.JS implementation of the amount computing is provided in chapter 3.
 \item \textbf{Payment Manager} It receives request to make a specific user pay a specific amount, process the payment and store it in the DB if the payment was successful. It is also responsible of verifying with the pre-authorization if the Driver can pay. 
 \item \textbf{Task Manager} It is primarily responsible of managing task allocation to workers, but also of processing Drivers reports and Admins special tasks queries. It exposes an interface to the Vehicle Manager too in order to allow it to perform automatic maintenance tasks on vehicles. A Node.JS implementation of the worker choosing algorithm is provided in chapter 3.
 \item \textbf{Authorization Manager} It manages most of the security of the system. It is responsible of Drivers and Workers signup and login. It is also responsible of verifying that every requests to the core are performed by an authorized user (e.g. Driver can't request Workers API). 
 \end{itemize}
-
 \subsection{Core Component Diagrams}
-\includegraphics[width=13cm,keepaspectratio]{subcomponents}
+\includegraphics[width=13cm,keepaspectratio]{subcomponents12}
 \includegraphics[width=13cm,keepaspectratio]{classborder}
 \newpage
 \section{Relevant State Charts}

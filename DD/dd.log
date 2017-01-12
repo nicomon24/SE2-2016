@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.6.8)  9 JAN 2017 19:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.6.8)  12 JAN 2017 16:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -325,17 +325,12 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 16.
 
-Underfull \hbox (badness 2512) in paragraph at lines 23--24
-\OT1/cmr/m/n/12 and Ve-hi-cle-M-an-ager to Router-Ve-hi-cleInt and
- []
-
-
-Overfull \hbox (12.0831pt too wide) in paragraph at lines 3--29
+Overfull \hbox (12.0831pt too wide) in paragraph at lines 3--31
  [] 
  []
 
 
-Overfull \hbox (33.34505pt too wide) in paragraph at lines 3--29
+Overfull \hbox (33.34505pt too wide) in paragraph at lines 3--31
  [] 
  []
 
@@ -370,71 +365,71 @@ File: images/maincompo.png Graphic file (type png)
 Package pdftex.def Info: images/maincompo.png used on input line 24.
 (pdftex.def)             Requested size: 369.88582pt x 178.02245pt.
  [8 <./images/maincompo.png>] [9] [10]
-<images/subcomponents.png, id=193, 1048.91875pt x 721.69624pt>
-File: images/subcomponents.png Graphic file (type png)
+<images/subcomponents12.png, id=193, 1048.91875pt x 721.69624pt>
+File: images/subcomponents12.png Graphic file (type png)
 
-<use images/subcomponents.png>
-Package pdftex.def Info: images/subcomponents.png used on input line 43.
+<use images/subcomponents12.png>
+Package pdftex.def Info: images/subcomponents12.png used on input line 57.
 (pdftex.def)             Requested size: 369.88582pt x 254.49156pt.
 
 <images/classborder.png, id=194, 653.44125pt x 562.1pt>
 File: images/classborder.png Graphic file (type png)
 
 <use images/classborder.png>
-Package pdftex.def Info: images/classborder.png used on input line 44.
+Package pdftex.def Info: images/classborder.png used on input line 58.
 (pdftex.def)             Requested size: 369.88582pt x 318.1789pt.
  [11] [12]
 Overfull \vbox (8.42046pt too high) has occurred while \output is active []
 
 
-[13 <./images/subcomponents.png> <./images/classborder.png>]
+[13 <./images/subcomponents12.png> <./images/classborder.png>]
 <images/vehiclestate.png, id=210, 628.3475pt x 339.2675pt>
 File: images/vehiclestate.png Graphic file (type png)
 
 <use images/vehiclestate.png>
-Package pdftex.def Info: images/vehiclestate.png used on input line 49.
+Package pdftex.def Info: images/vehiclestate.png used on input line 63.
 (pdftex.def)             Requested size: 369.88582pt x 199.71053pt.
 
 <images/reservationstate.png, id=211, 555.07375pt x 400.49625pt>
 File: images/reservationstate.png Graphic file (type png)
 
 <use images/reservationstate.png>
-Package pdftex.def Info: images/reservationstate.png used on input line 51.
+Package pdftex.def Info: images/reservationstate.png used on input line 65.
 (pdftex.def)             Requested size: 369.88582pt x 266.88277pt.
  [14 <./images/vehiclestate.png>]
 <images/taskstate.png, id=217, 679.53876pt x 362.35374pt>
 File: images/taskstate.png Graphic file (type png)
 
 <use images/taskstate.png>
-Package pdftex.def Info: images/taskstate.png used on input line 53.
+Package pdftex.def Info: images/taskstate.png used on input line 67.
 (pdftex.def)             Requested size: 369.88582pt x 197.23283pt.
  [15 <./images/reservationstate.png> <./images/taskstate.png>] <images/deployme
 nt.png, id=224, 682.55pt x 748.7975pt>
 File: images/deployment.png Graphic file (type png)
 
 <use images/deployment.png>
-Package pdftex.def Info: images/deployment.png used on input line 57.
+Package pdftex.def Info: images/deployment.png used on input line 71.
 (pdftex.def)             Requested size: 369.88582pt x 405.79568pt.
  [16 <./images/deployment.png>]
-<images/drive.png, id=230, 938.50626pt x 1460.45625pt>
+<images/drive.png, id=230, 615.29875pt x 914.41624pt>
 File: images/drive.png Graphic file (type png)
  <use images/drive.png>
-Package pdftex.def Info: images/drive.png used on input line 62.
-(pdftex.def)             Requested size: 341.43306pt x 531.31276pt.
+Package pdftex.def Info: images/drive.png used on input line 76.
+(pdftex.def)             Requested size: 341.43306pt x 507.42331pt.
 
 [17] <images/taskassignment.png, id=235, 751.80875pt x 1129.21875pt>
 File: images/taskassignment.png Graphic file (type png)
 
 <use images/taskassignment.png>
-Package pdftex.def Info: images/taskassignment.png used on input line 64.
+Package pdftex.def Info: images/taskassignment.png used on input line 78.
 (pdftex.def)             Requested size: 369.88582pt x 555.57922pt.
  [18 <./images/drive.png>] [19 <./images/taskassignment.png>] <images/interface
-s.png, id=247, 1144.275pt x 618.31pt>
+s.png, id=247, 1078.0275pt x 555.07375pt>
 File: images/interfaces.png Graphic file (type png)
 
 <use images/interfaces.png>
-Package pdftex.def Info: images/interfaces.png used on input line 68.
-(pdftex.def)             Requested size: 369.88582pt x 199.86337pt.
+Package pdftex.def Info: images/interfaces.png used on input line 82.
+(pdftex.def)             Requested size: 369.88582pt x 190.4504pt.
 ) [20 <./images/interfaces.png>]
 Chapter 3.
 (./chapters/algo.tex
@@ -492,7 +487,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 86.
  ) 
 Here is how much of TeX's memory you used:
  7280 strings out of 493117
- 106561 string characters out of 6135434
+ 106571 string characters out of 6135434
  210041 words of memory out of 5000000
  10569 multiletter control sequences out of 15000+600000
  8803 words of font info for 31 fonts, out of 8000000 for 9000
@@ -503,7 +498,7 @@ Here is how much of TeX's memory you used:
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></
 usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on dd.pdf (26 pages, 994487 bytes).
+Output written on dd.pdf (26 pages, 1060659 bytes).
 PDF statistics:
  368 PDF objects out of 1000 (max. 8388607)
  308 compressed objects within 4 object streams

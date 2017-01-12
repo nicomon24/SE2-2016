@@ -1,30 +1,33 @@
 \contentsline {chapter}{\numberline {1}Introduction}{4}{chapter.1}
 \contentsline {section}{\numberline {1.1}Purpose and Scope}{4}{section.1.1}
-\contentsline {section}{\numberline {1.2}Definitions and Abbreviations}{4}{section.1.2}
-\contentsline {section}{\numberline {1.3}Referenced Documents}{4}{section.1.3}
-\contentsline {chapter}{\numberline {2}Integration strategy}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Entry criteria}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}Elements to be integrated}{5}{section.2.2}
-\contentsline {section}{\numberline {2.3}Integration Testing Strategy}{6}{section.2.3}
-\contentsline {section}{\numberline {2.4}Sequence of Integration}{6}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Software integration}{6}{subsection.2.4.1}
-\contentsline {subsubsection}{STEP I1: DriveManager $\rightarrow $ VehicleManager}{6}{subsubsection*.2}
-\contentsline {subsubsection}{STEP I2: DriveManager $\rightarrow $ PaymentManager}{7}{subsubsection*.3}
-\contentsline {subsubsection}{STEP I3: TaskManager $\rightarrow $ VehicleManager}{7}{subsubsection*.4}
-\contentsline {subsubsection}{STEP I4: Router $\rightarrow $ AuthorizationManager}{7}{subsubsection*.5}
-\contentsline {subsubsection}{STEP I4: Router $\rightarrow $ DriveManager}{7}{subsubsection*.6}
-\contentsline {subsection}{\numberline {2.4.2}Subsystem integration}{7}{subsection.2.4.2}
-\contentsline {section}{\numberline {2.5}Test items}{7}{section.2.5}
-\contentsline {chapter}{\numberline {3}Individual Steps and Test Description}{8}{chapter.3}
-\contentsline {subsection}{\numberline {3.0.1}Router, AuthorizationManager}{8}{subsection.3.0.1}
-\contentsline {subsection}{\numberline {3.0.2}DriveManager, VehicleManager}{13}{subsection.3.0.2}
-\contentsline {subsection}{\numberline {3.0.3}DriveManager, PaymentManger}{14}{subsection.3.0.3}
-\contentsline {subsection}{\numberline {3.0.4}TaskManager, VehicleManger}{14}{subsection.3.0.4}
-\contentsline {subsection}{\numberline {3.0.5}Router + AuthorizationManager, DriveManager}{15}{subsection.3.0.5}
-\contentsline {subsection}{\numberline {3.0.6}Router + AuthorizationManager, VehicleManager}{16}{subsection.3.0.6}
-\contentsline {subsection}{\numberline {3.0.7}Router + AuthorizationManager, TaskManager}{16}{subsection.3.0.7}
-\contentsline {chapter}{\numberline {4}Tools and Test Equipment}{18}{chapter.4}
-\contentsline {chapter}{\numberline {5}Program Stubs and Test Data Required}{19}{chapter.5}
-\contentsline {section}{\numberline {5.1}DRAFT OF STUBS}{19}{section.5.1}
-\contentsline {section}{\numberline {5.2}DRAFT OF DRIVERS}{19}{section.5.2}
-\contentsline {chapter}{\numberline {6}Work review}{20}{chapter.6}
+\contentsline {section}{\numberline {1.2}Definitions, Acronyms and Abbreviations}{4}{section.1.2}
+\contentsline {section}{\numberline {1.3}Reference Documents}{5}{section.1.3}
+\contentsline {chapter}{\numberline {2}Integration strategy}{6}{chapter.2}
+\contentsline {section}{\numberline {2.1}Entry criteria}{6}{section.2.1}
+\contentsline {section}{\numberline {2.2}Elements to be integrated}{6}{section.2.2}
+\contentsline {section}{\numberline {2.3}Integration Testing Strategy}{7}{section.2.3}
+\contentsline {section}{\numberline {2.4}Sequence of Integration}{7}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Model integration}{7}{subsection.2.4.1}
+\contentsline {subsubsection}{STEP IM1: VehicleManager $\rightarrow $ Model}{7}{subsubsection*.2}
+\contentsline {subsubsection}{STEP IM2: DriveManager $\rightarrow $ Model}{8}{subsubsection*.3}
+\contentsline {subsubsection}{STEP IM3: TaskManager $\rightarrow $ Model}{8}{subsubsection*.4}
+\contentsline {subsubsection}{STEP IM4: AuthorizationManager $\rightarrow $ Model}{8}{subsubsection*.5}
+\contentsline {subsection}{\numberline {2.4.2}Software integration}{8}{subsection.2.4.2}
+\contentsline {subsubsection}{STEP I1: VehicleManager $\rightarrow $ Vehicles}{8}{subsubsection*.6}
+\contentsline {subsubsection}{STEP I2: DriveManager $\rightarrow $ VehicleManager, PaymentManager}{8}{subsubsection*.7}
+\contentsline {subsubsection}{STEP I3: TaskManager $\rightarrow $ VehicleManager}{8}{subsubsection*.8}
+\contentsline {subsubsection}{STEP I4: Router $\rightarrow $ DriveManager, TaskManager, AuthorizationManager}{9}{subsubsection*.9}
+\contentsline {subsection}{\numberline {2.4.3}Subsystem integration}{9}{subsection.2.4.3}
+\contentsline {subsubsection}{STEP IC1: Android Driver App $\rightarrow $ Core}{9}{subsubsection*.10}
+\contentsline {subsubsection}{STEP IC2: iOS Driver App $\rightarrow $ Core}{9}{subsubsection*.11}
+\contentsline {subsubsection}{STEP IC3: Driver Web Portal $\rightarrow $ Core}{9}{subsubsection*.12}
+\contentsline {subsubsection}{STEP IC4: Android and iOS Worker App $\rightarrow $ Core}{9}{subsubsection*.13}
+\contentsline {subsubsection}{STEP IC5: Admin Web Portal $\rightarrow $ Core}{9}{subsubsection*.14}
+\contentsline {chapter}{\numberline {3}Individual Steps and Test Description}{10}{chapter.3}
+\contentsline {section}{\numberline {3.1}STEP I1: VehicleManager $\rightarrow $ Vehicles}{10}{section.3.1}
+\contentsline {section}{\numberline {3.2}STEP I1: DriveManager $\rightarrow $ VehicleManager, PaymentManager}{11}{section.3.2}
+\contentsline {section}{\numberline {3.3}STEP I1: TaskManager $\rightarrow $ VehicleManager}{12}{section.3.3}
+\contentsline {section}{\numberline {3.4}STEP I1: Router $\rightarrow $ AuthorizationManager, DriveManager, TaskManager}{13}{section.3.4}
+\contentsline {chapter}{\numberline {4}Tools and Test Equipment}{16}{chapter.4}
+\contentsline {chapter}{\numberline {5}Program Stubs and Test Data Required}{17}{chapter.5}
+\contentsline {chapter}{\numberline {6}Work review}{18}{chapter.6}

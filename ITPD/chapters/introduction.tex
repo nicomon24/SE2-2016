@@ -3,9 +3,27 @@ This document describes the plans for testing the integration of the components 
 \newline
 In this document we only take into account the integration testing of the components, i.e. test if the connections between components are functional, while Unit Testing, i.e. testing a single component in a stand-alone manner, is not described here and is assumed as already done when the component is considered ready for integration testing.
 
-\section{Definitions and Abbreviations}
-\section{Referenced Documents}
+\section{Definitions, Acronyms and Abbreviations}
+\begin{description}
+\item [Driver] Client of the system, i.e. the one that uses the service, reserves and drives. Every Driver must provide personal informations (name, surname, email, birthdate, a valid license and payment information;
+\item [Drive] A single usage of the service, starts when the user turn on the engine, stops when the car is locked inside a Safe Area;
+\item [Worker] Employee of the company, perform physical actions (moving, charging etc) on cars;
+\item [Report] Car issue reported by the Driver during a Drive. Will later be assigned to a Worker;
+\item [Task] Piece of work assigned to a worker. Different type of tasks are described later. Every task assigns a single car to a single worker;
+\item [Administrator] Employee of PowerEni that is in charge of the administration of the system through the administration console;
+\item [RASD] Requirements Analysis and Specifications Document;
+\item [DD] Design Document;
+\item [API] Application Programming Interface; 
+\item [DBMS] DataBase Management System;
+\item [REST] REpresantional State Transfer.
+\end{description}
 
+\section{Reference Documents}
+\begin{itemize}
+\item Previously released RASD v1.1
+\item Previously released DD v1.2
+\item Integration testing samples (SpinGrid, myTaxiService)
+\end{itemize}
 
 
 

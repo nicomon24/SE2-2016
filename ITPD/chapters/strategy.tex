@@ -9,7 +9,8 @@ This percentage describe only the entry criteria for the integration testing pha
 
 \section{Elements to be integrated}
 In the DD, the structure of the system is clearly divided into high-level components, e.g. the Core and Clients, and lower-level component, i.e. the subcomponents of the Core. So, the integration phase will be performed at different level of abstraction. Given that the lower-level components compose the essential high-level component of the system (the Core), we will first integrate the lower-level and then proceed to higher levels. \newline
-The first critical component of the system is the Data Access Layer, that is implemented through an external Node.JS library (Sequelize, DD v1.1). For this reason, all the CRUD operations (Create, Read, Update, Delete) on the DB are considered as already tested. The usage of these operations inside components are consequentially already tested in Unit Testing.
+The first critical component of the system is the Data Access Layer, that is implemented through an external Node.JS library (Sequelize, DD). For this reason, all the CRUD operations (Create, Read, Update, Delete) on the DB are considered as already tested. 
+The second critical component is the Vehicle Management Layer, that is the network of vehicles connected to the system. We need this component for the correct behaviour of internal subcomponents of the Core.
 The lower-level components to be tested in the first phase are: \textbf{Vehicle Manager, Drive Manager, Payment Manager, Router, Authorization Manager and Task Manager}.
 \newline
 The high-level components of the system are all on the same level w.r.t. the Core. We will integrate \textbf{Android driver app, iOS driver app, driver web portal, Android worker app, iOS worker app, administrator web portal}.
@@ -19,21 +20,59 @@ We are going to use mainly a bottom-up approach during the integration testing o
 The second phase will follow a critical-first approach, since the components here are only dependent to the Core. So, the order will reflect the risk represented by the incorrect behaviour of the component.
 
 \section{Sequence of Integration}
-This section contains the detailed integration sequence, starting from the Core subsystem in paragraph 2.4.1 to the entire system integration in paragraph 2.4.2
+This section contains the detailed integration sequence, starting from the Core subsystem in paragraph 2.4.1 to the entire system integration in paragraph 2.4.2. The first integration tests, labeled IM, are the ones regarding the model. This steps will be described only briefly, since we need to test all the CRUD operations on the DB. Instead of enumerating inputs and relative output, we state what tables are used by a specific component.
+
+\subsection{Model integration}
+\subsubsection{STEP IM1: VehicleManager $\rightarrow$ Model}
+\begin{itemize}
+	\item READ, UPDATE on \textbf{Vehicles}
+\end{itemize}
+
+\subsubsection{STEP IM2: DriveManager $\rightarrow$ Model}
+\begin{itemize}
+	\item CREATE, READ, UPDATE, DELETE on \textbf{Reservations}
+	\item CREATE, READ, UPDATE on \textbf{Drive}
+\end{itemize}
+
+\subsubsection{STEP IM3: TaskManager $\rightarrow$ Model}
+\begin{itemize}
+	\item CREATE, READ, UPDATE, DELETE on \textbf{Reservations}
+	\item CREATE, READ, UPDATE, DELETE on \textbf{Tasks}
+	\item CREATE, READ, UPDATE, DELETE on \textbf{Tasks}
+\end{itemize}
+
+\subsubsection{STEP IM4: AuthorizationManager $\rightarrow$ Model}
+\begin{itemize}
+	\item CREATE, READ, UPDATE, DELETE on \textbf{Users}
+\end{itemize}
 
 \subsection{Software integration}
-\subsubsection{STEP I1: DriveManager $\rightarrow$ VehicleManager}
-This integration contains the most important components in our system. All the DriveManager functionalities are tested. Since DriveManager uses also PaymentManager, but we still want to integrate one-by-one, we will use a PaymentManager stub, that simply simulate a payment and the availability check (always replying in a correct way). We will need a driver to call the relevant DriveManager's functions.
-\subsubsection{STEP I2: DriveManager $\rightarrow$ PaymentManager}
-The previous PaymentManager stub is replaced by the real component, and all the functionalities that require a payment are tested. We also will need a driver to call these DriveManager's functions.
+
+\subsubsection{STEP I1: VehicleManager $\rightarrow$ Vehicles}
+The VehicleManager component is the only one that interacts directly with the vehicles. We will avoid the description of the polling tracking system since it should be very straight-forward: every 30 seconds the VehicleManager requests the state of all the vehicles, and update the record in the DB with the new state. Instead, we will test the performAction and getLastDrive functions. We will not test the automatic report here but in step I3 (since we need TaskManager).
+
+\subsubsection{STEP I2: DriveManager $\rightarrow$ VehicleManager, PaymentManager}
+We then proceed to integrate DriveManager and their subcomponents. All the DriveManager's requests includes a call to VehicleManager, while PaymentManager is only called on reserve and stop. We will need a driver to call DriveManager interface.
+
 \subsubsection{STEP I3: TaskManager $\rightarrow$ VehicleManager}
-The integration proceed to TaskManager, which only depends on VehicleManager. A driver to call TaskManager interface is required.
-\subsubsection{STEP I4: Router $\rightarrow$ AuthorizationManager}
-TODO
-\subsubsection{STEP I4: Router $\rightarrow$ DriveManager}
-TODO
+TaskManager calls VehicleManager to change vehicle's state to maintenance. We will need a driver to call all the TaskManager interface. Also, during polling, VehicleManager can make automatic reports (with the data provided by the vehicle itself), so, we will need to simulate a report from a vehicle.
+
+\subsubsection{STEP I4: Router $\rightarrow$ DriveManager, TaskManager, AuthorizationManager}
+We then proceed with the integration of the central component of the Core, the router. We will need an HTTP client to act as a driver, calling all the possible endpoints on the router. 
 
 \subsection{Subsystem integration}
+\subsubsection{STEP IC1: Android Driver App $\rightarrow$ Core}
+The first high-level integration we will perform is the Android driver app. We have chosen to integrate first the driver app because is the only component that is publicly available and will be the most used. We start from Android because we predict that the majority of client will be Android ones (by mobile market distribution). The app testing requires the usage of all the functionalities of the app, verifying at every step on the server-side if the interaction raise some errors. We will not cover this testing in details. The devices used for testing are listed below.
 
-\section{Test items}
-The items are the integrations of the components previously described in [Design Document, DD, Paragraph 2.X]. 
+\subsubsection{STEP IC2: iOS Driver App $\rightarrow$ Core}
+The same consideration stands for the iOS driver app, tested like the Android one. The devices used for testing are listed below.
+
+\subsubsection{STEP IC3: Driver Web Portal $\rightarrow$ Core}
+As the mobile apps, the driver web portal is publicly available, but will be probably used less than the apps. Also this components is tested in every function it has. The devices and browsers used for testing are listed below.
+
+\subsubsection{STEP IC4: Android and iOS Worker App $\rightarrow$ Core}
+We then proceed to test workers apps, as before we test all the functionalities provided here. The devices and browsers used for testing are listed below.
+
+\subsubsection{STEP IC5: Admin Web Portal $\rightarrow$ Core}
+Test the admin web portal as before, test all the functionalities provided. The devices and browsers used for testing are listed below.
+
