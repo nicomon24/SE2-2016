@@ -140,7 +140,7 @@
 \end{tabular} 
 
 %---------------------------------------------------------------------------------------------I4-----------------------------------------------------------------------------------------------------------------------------%
-\section{STEP I1: Router $\rightarrow$ AuthorizationManager, DriveManager, TaskManager}
+\section{STEP I1: Router $\rightarrow$ AuthorizationManager, DriveManager, TaskManager, VehicleManager}
 
 \begin{tabular} {| L{7cm} | L{7cm} |}
   \hline
@@ -326,6 +326,23 @@
 
 \bigbreak
 
+\begin{tabular} {| L{7cm} | L{7cm} |}
+  \hline
+  \multicolumn{2}{|c|}{availableVehicles(data)} \\
+  \hline
+  \textit{Input} & \textit{Effect} \\
+  \hline
+  A null parameter & A NullArgumentException is raised \\
+  \hline
+  The calling user is not an authorized Driver & An unauthorized error (401) is thrown. \\
+  \hline
+  Data does not contain any position for the Driver & A list of al the vehicles is sent back. \\
+  \hline
+  Data does contain any position for the Driver & A list of nearby vehicles is fetched and sent back. \\
+  \hline
+\end{tabular} 
+
+\bigbreak
 
 
 

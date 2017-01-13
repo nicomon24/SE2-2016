@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.6.8)  13 JAN 2017 13:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.6.8)  13 JAN 2017 12:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**dd.tex
-(./dd.tex
+**pp.tex
+(./pp.tex
 LaTeX2e <2014/05/01>
 Babel <3.9k> and hyphenation patterns for 78 languages loaded.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/book.cls
@@ -163,6 +163,7 @@ File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
+Package hyperref Info: Option `colorlinks' set `true' on input line 4319.
 Package hyperref Info: Hyper figures OFF on input line 4443.
 Package hyperref Info: Link nesting OFF on input line 4448.
 Package hyperref Info: Hyper index ON on input line 4451.
@@ -185,7 +186,7 @@ Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
 Package hyperref Info: backreferencing OFF on input line 6310.
-Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring ON on input line 6313.
 Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
@@ -225,36 +226,45 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
-) (./dd.aux)
-\openout1 = `dd.aux'.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen118
+\extrarowheight=\dimen119
+\NC@list=\toks17
+\extratabsurround=\skip46
+\backup@length=\skip47
+) (./pp.aux)
+\openout1 = `pp.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
- (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count107
-\scratchdimen=\dimen118
+\scratchdimen=\dimen120
 \scratchbox=\box29
 \nofMPsegments=\count108
 \nofMParguments=\count109
-\everyMPshowfont=\toks17
+\everyMPshowfont=\toks18
 \MPscratchCnt=\count110
-\MPscratchDim=\dimen119
+\MPscratchDim=\dimen121
 \MPnumerator=\count111
 \makeMPintoPDFobject=\count112
-\everyMPtoPDFconversion=\toks18
+\everyMPtoPDFconversion=\toks19
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -271,7 +281,7 @@ e
 ))
 \c@lstlisting=\count113
 \AtBeginShipoutBox=\box30
-Package hyperref Info: Link coloring OFF on input line 40.
+Package hyperref Info: Link coloring ON on input line 42.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -281,29 +291,29 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count114
 )
-LaTeX Info: Redefining \ref on input line 40.
-LaTeX Info: Redefining \pageref on input line 40.
-LaTeX Info: Redefining \nameref on input line 40.
+LaTeX Info: Redefining \ref on input line 42.
+LaTeX Info: Redefining \pageref on input line 42.
+LaTeX Info: Redefining \nameref on input line 42.
 
-(./dd.out) (./dd.out)
+(./pp.out) (./pp.out)
 \@outlinefile=\write3
-\openout3 = `dd.out'.
+\openout3 = `pp.out'.
 
- <images/polimi.png, id=112, 1204.5pt x 483.30562pt>
+ <images/polimi.png, id=24, 1204.5pt x 483.30562pt>
 File: images/polimi.png Graphic file (type png)
 
 <use images/polimi.png>
-Package pdftex.def Info: images/polimi.png used on input line 52.
+Package pdftex.def Info: images/polimi.png used on input line 54.
 (pdftex.def)             Requested size: 142.25475pt x 57.07971pt.
  [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./image
 s/polimi.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 56--56
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
 |\OT1/cmr/bx/n/17.28 Contents|
  []
 
-(./dd.toc
+(./pp.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -312,25 +322,17 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 2.
 )
 \tf@toc=\write4
-\openout4 = `dd.toc'.
+\openout4 = `pp.toc'.
 
  [2
 
 ] (./status.tex
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 16.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 16.
-
-Overfull \hbox (12.0831pt too wide) in paragraph at lines 3--32
+Overfull \hbox (13.28308pt too wide) in paragraph at lines 3--16
  [] 
  []
 
 
-Overfull \hbox (33.34505pt too wide) in paragraph at lines 3--32
+Overfull \hbox (34.94502pt too wide) in paragraph at lines 3--16
  [] 
  []
 
@@ -338,170 +340,60 @@ Overfull \hbox (33.34505pt too wide) in paragraph at lines 3--32
 
 ]
 Chapter 1.
-(./chapters/introduction.tex
-Overfull \hbox (0.75583pt too wide) in paragraph at lines 22--22
- |[]\OT1/cmr/bx/n/17.28 Definitions, Acronyms and Ab-bre-vi-a-tions| 
- []
-
-[4
+(./chapters/introduction.tex) [4
 
 ]
-Missing character: There is no   in font cmr12!
- [5]) [6]
 Chapter 2.
-(./chapters/architecture.tex
-<images/archi.png, id=171, 1334.9875pt x 774.895pt>
-File: images/archi.png Graphic file (type png)
- <use images/archi.png>
-Package pdftex.def Info: images/archi.png used on input line 8.
-(pdftex.def)             Requested size: 369.88582pt x 214.69893pt.
-
-[7
-
- <./images/archi.png>] <images/maincompo.png, id=179, 750.805pt x 361.35pt>
-File: images/maincompo.png Graphic file (type png)
-
-<use images/maincompo.png>
-Package pdftex.def Info: images/maincompo.png used on input line 24.
-(pdftex.def)             Requested size: 369.88582pt x 178.02245pt.
- [8 <./images/maincompo.png>] [9] [10]
-<images/subcomponents12.png, id=193, 1048.91875pt x 721.69624pt>
-File: images/subcomponents12.png Graphic file (type png)
-
-<use images/subcomponents12.png>
-Package pdftex.def Info: images/subcomponents12.png used on input line 57.
-(pdftex.def)             Requested size: 369.88582pt x 254.49156pt.
-
-<images/classborder.png, id=194, 653.44125pt x 562.1pt>
-File: images/classborder.png Graphic file (type png)
-
-<use images/classborder.png>
-Package pdftex.def Info: images/classborder.png used on input line 58.
-(pdftex.def)             Requested size: 369.88582pt x 318.1789pt.
- [11] [12]
-Overfull \vbox (8.42046pt too high) has occurred while \output is active []
-
-
-[13 <./images/subcomponents12.png> <./images/classborder.png>]
-<images/vehiclestate.png, id=210, 628.3475pt x 339.2675pt>
-File: images/vehiclestate.png Graphic file (type png)
-
-<use images/vehiclestate.png>
-Package pdftex.def Info: images/vehiclestate.png used on input line 63.
-(pdftex.def)             Requested size: 369.88582pt x 199.71053pt.
-
-<images/reservationstate.png, id=211, 555.07375pt x 400.49625pt>
-File: images/reservationstate.png Graphic file (type png)
-
-<use images/reservationstate.png>
-Package pdftex.def Info: images/reservationstate.png used on input line 65.
-(pdftex.def)             Requested size: 369.88582pt x 266.88277pt.
- [14 <./images/vehiclestate.png>]
-<images/taskstate.png, id=217, 679.53876pt x 362.35374pt>
-File: images/taskstate.png Graphic file (type png)
-
-<use images/taskstate.png>
-Package pdftex.def Info: images/taskstate.png used on input line 67.
-(pdftex.def)             Requested size: 369.88582pt x 197.23283pt.
- [15 <./images/reservationstate.png> <./images/taskstate.png>] <images/deployme
-nt.png, id=224, 682.55pt x 748.7975pt>
-File: images/deployment.png Graphic file (type png)
-
-<use images/deployment.png>
-Package pdftex.def Info: images/deployment.png used on input line 71.
-(pdftex.def)             Requested size: 369.88582pt x 405.79568pt.
- [16 <./images/deployment.png>]
-<images/drive.png, id=230, 615.29875pt x 914.41624pt>
-File: images/drive.png Graphic file (type png)
- <use images/drive.png>
-Package pdftex.def Info: images/drive.png used on input line 76.
-(pdftex.def)             Requested size: 341.43306pt x 507.42331pt.
-
-[17] <images/taskassignment.png, id=235, 751.80875pt x 1129.21875pt>
-File: images/taskassignment.png Graphic file (type png)
-
-<use images/taskassignment.png>
-Package pdftex.def Info: images/taskassignment.png used on input line 78.
-(pdftex.def)             Requested size: 369.88582pt x 555.57922pt.
- [18 <./images/drive.png>] [19 <./images/taskassignment.png>] <images/interface
-s.png, id=247, 1037.8775pt x 561.09625pt>
-File: images/interfaces.png Graphic file (type png)
-
-<use images/interfaces.png>
-Package pdftex.def Info: images/interfaces.png used on input line 82.
-(pdftex.def)             Requested size: 369.88582pt x 199.96538pt.
-) [20 <./images/interfaces.png>]
-Chapter 3.
-(./chapters/algo.tex
-Overfull \hbox (11.8493pt too wide) in paragraph at lines 7--8
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (47.09924pt too wide) in paragraph at lines 8--9
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 11.
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omlcmr.fd
-File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 71.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 11.
- [21
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 71.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
+ [5
 
 ]
-Overfull \hbox (18.89929pt too wide) in paragraph at lines 36--37
-[][][][][][][][][][][][][][] 
- []
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
+ (./pp.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
 
 
-Overfull \hbox (47.09924pt too wide) in paragraph at lines 42--43
-[][][][][][][][][][][][][][][] 
- []
+Package rerunfilecheck Warning: File `pp.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
-
-Overfull \hbox (68.2492pt too wide) in paragraph at lines 44--45
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-) [22]
-Chapter 4.
-(./chapters/requirements.tex [23
-
-] [24]) [25]
-Chapter 5.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 86.
-[26
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
- (./dd.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 86.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 86.
-Package rerunfilecheck Info: File `dd.out' has not changed.
-(rerunfilecheck)             Checksum: 5569FDCF59369B11B1FD005CA92E6D97;1743.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 86.
+Package rerunfilecheck Info: Checksums for `pp.out':
+(rerunfilecheck)             Before: 94E0293154E3F6A5017389E88258FDDD;306
+(rerunfilecheck)             After:  220DF531F597C7B93DB5B5BA7962B994;93.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
  ) 
 Here is how much of TeX's memory you used:
- 7280 strings out of 493117
- 106571 string characters out of 6135434
- 210041 words of memory out of 5000000
- 10569 multiletter control sequences out of 15000+600000
- 8803 words of font info for 31 fonts, out of 8000000 for 9000
+ 7037 strings out of 493117
+ 102645 string characters out of 6135434
+ 195621 words of memory out of 5000000
+ 10435 multiletter control sequences out of 15000+600000
+ 7899 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,9n,42p,1023b,1867s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on dd.pdf (26 pages, 1067881 bytes).
+ 29i,8n,35p,235b,401s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{section.1.3} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.1.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.1.1} has been referenced but does not exist
+, replaced by a fixed one
+
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on pp.pdf (5 pages, 148657 bytes).
 PDF statistics:
- 368 PDF objects out of 1000 (max. 8388607)
- 308 compressed objects within 4 object streams
- 101 named destinations out of 1000 (max. 500000)
- 277 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 75 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
+ 12 named destinations out of 1000 (max. 500000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
