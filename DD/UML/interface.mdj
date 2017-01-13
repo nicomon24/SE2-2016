@@ -338,7 +338,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+getAvailableCars(position)",
+											"text": "+getAvailableVehicles(position)",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5
 										}
@@ -2389,7 +2389,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+availableCars(data)",
+											"text": "+availableVehicles(data)",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5
 										}
@@ -8492,7 +8492,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFY7U/1wTEb0TY="
 							},
-							"name": "getAvailableCars",
+							"name": "getAvailableVehicles",
 							"visibility": "public",
 							"isStatic": false,
 							"isLeaf": false,
@@ -8507,7 +8507,6 @@
 									"visibility": "public",
 									"isStatic": false,
 									"isLeaf": false,
-									"type": "",
 									"isReadOnly": false,
 									"isOrdered": false,
 									"isUnique": false,
@@ -9677,7 +9676,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFY7XJsvDI/Eh8="
 							},
-							"name": "availableCars",
+							"name": "availableVehicles",
 							"visibility": "public",
 							"isStatic": false,
 							"isLeaf": false,
@@ -9692,7 +9691,6 @@
 									"visibility": "public",
 									"isStatic": false,
 									"isLeaf": false,
-									"type": "",
 									"isReadOnly": false,
 									"isOrdered": false,
 									"isUnique": false,

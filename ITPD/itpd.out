@@ -12,9 +12,9 @@
 \BOOKMARK [2][-]{subsection.2.4.3}{Subsystem integration}{section.2.4}% 12
 \BOOKMARK [0][-]{chapter.3}{Individual Steps and Test Description}{}% 13
 \BOOKMARK [1][-]{section.3.1}{STEP I1: VehicleManager \040Vehicles}{chapter.3}% 14
-\BOOKMARK [1][-]{section.3.2}{STEP I1: DriveManager \040VehicleManager, PaymentManager}{chapter.3}% 15
-\BOOKMARK [1][-]{section.3.3}{STEP I1: TaskManager \040VehicleManager}{chapter.3}% 16
-\BOOKMARK [1][-]{section.3.4}{STEP I1: Router \040AuthorizationManager, DriveManager, TaskManager, VehicleManager}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.2}{STEP I2: DriveManager \040VehicleManager, PaymentManager}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.3}{STEP I3: TaskManager \040VehicleManager}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.4}{STEP I4: Router \040AuthorizationManager, DriveManager, TaskManager, VehicleManager}{chapter.3}% 17
 \BOOKMARK [0][-]{chapter.4}{Tools and Test Equipment}{}% 18
 \BOOKMARK [0][-]{chapter.5}{Program Stubs and Test Data Required}{}% 19
 \BOOKMARK [0][-]{chapter.6}{Work review}{}% 20
