@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.6.8)  13 JAN 2017 12:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.6.8)  14 JAN 2017 19:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -299,7 +299,7 @@ LaTeX Info: Redefining \nameref on input line 42.
 \@outlinefile=\write3
 \openout3 = `pp.out'.
 
- <images/polimi.png, id=24, 1204.5pt x 483.30562pt>
+ <images/polimi.png, id=88, 1204.5pt x 483.30562pt>
 File: images/polimi.png Graphic file (type png)
 
 <use images/polimi.png>
@@ -340,60 +340,144 @@ Overfull \hbox (34.94502pt too wide) in paragraph at lines 3--16
 
 ]
 Chapter 1.
-(./chapters/introduction.tex) [4
+(./chapters/introduction.tex
+Overfull \hbox (0.75583pt too wide) in paragraph at lines 12--12
+ |[]\OT1/cmr/bx/n/17.28 Definitions, Acronyms and Ab-bre-vi-a-tions| 
+ []
 
-]
-Chapter 2.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 71.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 14.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 71.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
- [5
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 14.
+ [4
+
+]) [5]
+Chapter 2.
+(./chapters/estimation.tex
+<images/ILFcomp.png, id=142, 973.6375pt x 440.64626pt>
+File: images/ILFcomp.png Graphic file (type png)
+
+<use images/ILFcomp.png>
+Package pdftex.def Info: images/ILFcomp.png used on input line 12.
+(pdftex.def)             Requested size: 195.0pt x 88.2487pt.
+ [6
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
+<images/ILFfp.png, id=148, 509.905pt x 362.35374pt>
+File: images/ILFfp.png Graphic file (type png)
+ <use images/ILFfp.png>
+Package pdftex.def Info: images/ILFfp.png used on input line 30.
+(pdftex.def)             Requested size: 136.50238pt x 97.00192pt.
+
+[7 <./images/ILFcomp.png>] [8 <./images/ILFfp.png>]
+<images/EIcomp.png, id=164, 621.32124pt x 276.03125pt>
+File: images/EIcomp.png Graphic file (type png)
+ <use images/EIcomp.png>
+Package pdftex.def Info: images/EIcomp.png used on input line 68.
+(pdftex.def)             Requested size: 195.0pt x 86.63019pt.
+
+[9 <./images/EIcomp.png>] <images/EIfp.png, id=172, 441.65pt x 221.82875pt>
+File: images/EIfp.png Graphic file (type png)
+
+<use images/EIfp.png>
+Package pdftex.def Info: images/EIfp.png used on input line 104.
+(pdftex.def)             Requested size: 136.50238pt x 68.55971pt.
+ [10 <./images/EIfp.png>]
+<images/EOcomp.png, id=181, 574.145pt x 263.98625pt>
+File: images/EOcomp.png Graphic file (type png)
+ <use images/EOcomp.png>
+Package pdftex.def Info: images/EOcomp.png used on input line 140.
+(pdftex.def)             Requested size: 195.0pt x 89.65746pt.
+
+[11 <./images/EOcomp.png>] <images/EOfp.png, id=189, 426.59375pt x 218.8175pt>
+File: images/EOfp.png Graphic file (type png)
+
+<use images/EOfp.png>
+Package pdftex.def Info: images/EOfp.png used on input line 153.
+(pdftex.def)             Requested size: 136.50238pt x 70.01968pt.
+ <images/EQcomp.png, id=190, 334.24875pt x 149.55875pt>
+File: images/EQcomp.png Graphic file (type png)
+
+<use images/EQcomp.png>
+Package pdftex.def Info: images/EQcomp.png used on input line 176.
+(pdftex.def)             Requested size: 195.0pt x 87.25531pt.
+ <images/EQfp.png, id=191, 240.9pt x 125.46875pt>
+File: images/EQfp.png Graphic file (type png)
+
+<use images/EQfp.png>
+Package pdftex.def Info: images/EQfp.png used on input line 189.
+(pdftex.def)             Requested size: 136.50238pt x 71.09673pt.
+ [12 <./images/EOfp.png>] [13 <./images/EQcomp.png> <./images/EQfp.png>] [14] [
+15
+
+] [16] [17]
+<images/cocohome.png, id=247, 1205.50375pt x 818.05624pt>
+File: images/cocohome.png Graphic file (type png)
+
+<use images/cocohome.png>
+Package pdftex.def Info: images/cocohome.png used on input line 321.
+(pdftex.def)             Requested size: 390.0pt x 264.65433pt.
+
+<images/cocores1.png, id=248, 695.59875pt x 193.72375pt>
+File: images/cocores1.png Graphic file (type png)
+
+<use images/cocores1.png>
+Package pdftex.def Info: images/cocores1.png used on input line 327.
+(pdftex.def)             Requested size: 234.00238pt x 65.16759pt.
+
+<images/cocores2.png, id=249, 778.91pt x 193.72375pt>
+File: images/cocores2.png Graphic file (type png)
+
+<use images/cocores2.png>
+Package pdftex.def Info: images/cocores2.png used on input line 333.
+(pdftex.def)             Requested size: 234.00238pt x 58.19737pt.
+) [18
+
+] [19 <./images/cocohome.png> <./images/cocores1.png> <./images/cocores2.png>]
+Chapter 3.
+(./chapters/schedule.tex) [20
+
+]
+Chapter 4.
+(./chapters/resource.tex) [21
+
+]
+Chapter 5.
+(./chapters/risk.tex) [22
+
+]
+Chapter 6.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 88.
+[23
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 88.
  (./pp.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
-
-
-Package rerunfilecheck Warning: File `pp.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `pp.out':
-(rerunfilecheck)             Before: 94E0293154E3F6A5017389E88258FDDD;306
-(rerunfilecheck)             After:  220DF531F597C7B93DB5B5BA7962B994;93.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 88.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 88.
+Package rerunfilecheck Info: File `pp.out' has not changed.
+(rerunfilecheck)             Checksum: 1733676D233E46CBCBA3C3EDE50C0F0B;1418.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 88.
  ) 
 Here is how much of TeX's memory you used:
- 7037 strings out of 493117
- 102645 string characters out of 6135434
- 195621 words of memory out of 5000000
- 10435 multiletter control sequences out of 15000+600000
- 7899 words of font info for 28 fonts, out of 8000000 for 9000
+ 7222 strings out of 493117
+ 105498 string characters out of 6135434
+ 200807 words of memory out of 5000000
+ 10521 multiletter control sequences out of 15000+600000
+ 9150 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,8n,35p,235b,401s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{section.1.3} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.1.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.1.1} has been referenced but does not exist
-, replaced by a fixed one
-
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on pp.pdf (5 pages, 148657 bytes).
+ 29i,9n,35p,539b,554s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on pp.pdf (23 pages, 508036 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 321 PDF objects out of 1000 (max. 8388607)
+ 265 compressed objects within 3 object streams
+ 86 named destinations out of 1000 (max. 500000)
+ 229 words of extra memory for PDF output out of 10000 (max. 10000000)
 

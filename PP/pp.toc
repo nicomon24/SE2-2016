@@ -1,2 +1,46 @@
 \contentsline {chapter}{\numberline {1}Introduction}{4}{chapter.1}
-\contentsline {chapter}{\numberline {2}Work review}{5}{chapter.2}
+\contentsline {section}{\numberline {1.1}Purpose and Scope of this document}{4}{section.1.1}
+\contentsline {section}{\numberline {1.2}Definitions, Acronyms and Abbreviations}{4}{section.1.2}
+\contentsline {section}{\numberline {1.3}Referenced Documents}{5}{section.1.3}
+\contentsline {chapter}{\numberline {2}Project Size, Effort and Costs estimation}{6}{chapter.2}
+\contentsline {section}{\numberline {2.1}Size estimation using FP}{6}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Internal Logic Files (ILF)}{6}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}External Logic Files (ELF)}{7}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}External Inputs (EI)}{9}{subsection.2.1.3}
+\contentsline {subsubsection}{Drivers EI}{9}{subsubsection*.2}
+\contentsline {subsubsection}{Workers EI}{10}{subsubsection*.3}
+\contentsline {subsubsection}{Admin EI}{10}{subsubsection*.4}
+\contentsline {subsection}{\numberline {2.1.4}External Outputs (EO)}{11}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.5}External Inquiry (EQ)}{12}{subsection.2.1.5}
+\contentsline {subsection}{\numberline {2.1.6}FP estimation recap}{14}{subsection.2.1.6}
+\contentsline {section}{\numberline {2.2}COCOMO estimation}{15}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Scale Drivers}{15}{subsection.2.2.1}
+\contentsline {subsubsection}{Precedentedness (PREC)}{15}{subsubsection*.5}
+\contentsline {subsubsection}{Development Flexibility (FLEX)}{15}{subsubsection*.6}
+\contentsline {subsubsection}{Architecture / Risk Resolution (RESL)}{15}{subsubsection*.7}
+\contentsline {subsubsection}{Team Cohesion (TEAM)}{15}{subsubsection*.8}
+\contentsline {subsubsection}{Process Maturity (PMAT)}{15}{subsubsection*.9}
+\contentsline {subsection}{\numberline {2.2.2}Cost Drivers}{15}{subsection.2.2.2}
+\contentsline {subsubsection}{Required Software Reliability (RELY)}{15}{subsubsection*.10}
+\contentsline {subsubsection}{Data Base Size (DATA)}{16}{subsubsection*.11}
+\contentsline {subsubsection}{Product Complexity (CPLX)}{16}{subsubsection*.12}
+\contentsline {subsubsection}{Developed for Reusability (RUSE)}{16}{subsubsection*.13}
+\contentsline {subsubsection}{Documentation Match to Life-Cycle Needs (DOCU)}{16}{subsubsection*.14}
+\contentsline {subsubsection}{Execution Time Constraint (TIME)}{16}{subsubsection*.15}
+\contentsline {subsubsection}{Main Storage Constraint (STOR)}{16}{subsubsection*.16}
+\contentsline {subsubsection}{Platform Volatility (PVOL)}{16}{subsubsection*.17}
+\contentsline {subsubsection}{Analyst Capability (ACAP)}{17}{subsubsection*.18}
+\contentsline {subsubsection}{Programmer Capability (PCAP)}{17}{subsubsection*.19}
+\contentsline {subsubsection}{Personnel Continuity (PCON)}{17}{subsubsection*.20}
+\contentsline {subsubsection}{Applications Experience (APEX)}{17}{subsubsection*.21}
+\contentsline {subsubsection}{Platform Experience (PLEX)}{17}{subsubsection*.22}
+\contentsline {subsubsection}{Language and Tool Experience (LTEX)}{17}{subsubsection*.23}
+\contentsline {subsubsection}{Use of Software Tools (TOOL)}{17}{subsubsection*.24}
+\contentsline {subsubsection}{Multisite Development (SITE)}{17}{subsubsection*.25}
+\contentsline {subsubsection}{Required Development Schedule (SCED)}{17}{subsubsection*.26}
+\contentsline {subsection}{\numberline {2.2.3}Drivers recap}{18}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Results}{18}{subsection.2.2.4}
+\contentsline {chapter}{\numberline {3}Planned Schedule}{20}{chapter.3}
+\contentsline {chapter}{\numberline {4}Resource Allocation}{21}{chapter.4}
+\contentsline {chapter}{\numberline {5}Risk Management}{22}{chapter.5}
+\contentsline {chapter}{\numberline {6}Work review}{23}{chapter.6}
