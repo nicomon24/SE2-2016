@@ -27,11 +27,13 @@ All the ILF that we have identified are:
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.35\textwidth]{ILFfp}
+  \includegraphics[width=0.25\textwidth]{ILFfp}
   \caption{Function Point estimation for ILF}
 \end{figure}
 
 The total FP from ILF is then 59, as shown in the review Table 2.1. 
+
+\clearpage
 
 \begin{table}
   \centering
@@ -51,6 +53,8 @@ The total FP from ILF is then 59, as shown in the review Table 2.1.
     \end{tabular}
   \caption{Total FP from ILF}
 \end{table}
+
+
 
 \subsection{External Logic Files (ELF)}
 The ELF definition by IFPUG is: \bigbreak
@@ -131,6 +135,8 @@ The total FPs from EI are 41, as in the review Table 2.2.
   \caption{Total FP from EI}
 \end{table}
 
+\clearpage
+
 \subsection{External Outputs (EO)}
 The definition of EO by IFPUG is: \bigbreak
 \textit{"An external output (EO) is an elementary process that sends data or control information outside the application boundary. The primary intent of an external output is to present information to a user through processing logic other than, or in addition to, the retrieval of data or control information . The processing logic must contain at least one mathematical formula or calculation, create derived data maintain one or more ILFs or alter the behavior of the system."}
@@ -153,6 +159,8 @@ The resulting FPs for EO are 8, as stated in the Table 2.3.
   \includegraphics[width=0.35\textwidth]{EOfp}
   \caption{Function Point estimation for EO}
 \end{figure}
+
+\clearpage
 
 \begin{table}
   \centering
@@ -203,6 +211,8 @@ The resulting FPs for EQ are 6, as stated in the Table 2.4.
   \caption{Total FP from EQ}
 \end{table}
 
+\clearpage
+
 \subsection{FP estimation recap}
 The totals of every level from before is copied here and a final total is provided. 
 
@@ -236,7 +246,7 @@ We are going to list all our estimation on factors, and later use an online calc
 \subsubsection{Precedentedness (PREC)}
 Since we have already developed different system that uses a similar architecture (NodeJS, Postgres, etc.) and there is no need for any innovative algorithm here, this factor will be set to \textbf{Very High}
 \subsubsection{Development Flexibility (FLEX)}
-The requirements where not so detailed and formal and where open to interpretation. Also, we had only another constraint, i.e. the API ofthe vehicles, that are considered already developed. We will set this to \textbf{Nominal}
+The requirements where not so detailed and formal and where open to interpretation. Also, we had only another constraint, i.e. the API of the vehicles, that are considered already developed. We will set this to \textbf{Nominal}
 \subsubsection{Architecture / Risk Resolution (RESL)} 
 As stated below in our risk analysis, the dangerous risks are only few, so we are setting this to \textbf{High}
 \subsubsection{Team Cohesion (TEAM)}

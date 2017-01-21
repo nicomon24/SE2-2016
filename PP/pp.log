@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.6.8)  14 JAN 2017 19:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.6.8)  21 JAN 2017 13:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -299,7 +299,7 @@ LaTeX Info: Redefining \nameref on input line 42.
 \@outlinefile=\write3
 \openout3 = `pp.out'.
 
- <images/polimi.png, id=88, 1204.5pt x 483.30562pt>
+ <images/polimi.png, id=100, 1204.5pt x 483.30562pt>
 File: images/polimi.png Graphic file (type png)
 
 <use images/polimi.png>
@@ -356,7 +356,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 ]) [5]
 Chapter 2.
 (./chapters/estimation.tex
-<images/ILFcomp.png, id=142, 973.6375pt x 440.64626pt>
+<images/ILFcomp.png, id=157, 973.6375pt x 440.64626pt>
 File: images/ILFcomp.png Graphic file (type png)
 
 <use images/ILFcomp.png>
@@ -365,119 +365,169 @@ Package pdftex.def Info: images/ILFcomp.png used on input line 12.
  [6
 
 ]
-<images/ILFfp.png, id=148, 509.905pt x 362.35374pt>
+<images/ILFfp.png, id=164, 509.905pt x 362.35374pt>
 File: images/ILFfp.png Graphic file (type png)
  <use images/ILFfp.png>
 Package pdftex.def Info: images/ILFfp.png used on input line 30.
-(pdftex.def)             Requested size: 136.50238pt x 97.00192pt.
+(pdftex.def)             Requested size: 97.5pt x 69.28471pt.
 
-[7 <./images/ILFcomp.png>] [8 <./images/ILFfp.png>]
-<images/EIcomp.png, id=164, 621.32124pt x 276.03125pt>
+[7 <./images/ILFcomp.png> <./images/ILFfp.png>]
+<images/EIcomp.png, id=174, 621.32124pt x 276.03125pt>
 File: images/EIcomp.png Graphic file (type png)
  <use images/EIcomp.png>
-Package pdftex.def Info: images/EIcomp.png used on input line 68.
+Package pdftex.def Info: images/EIcomp.png used on input line 72.
 (pdftex.def)             Requested size: 195.0pt x 86.63019pt.
 
-[9 <./images/EIcomp.png>] <images/EIfp.png, id=172, 441.65pt x 221.82875pt>
+[8
+
+] [9 <./images/EIcomp.png>]
+<images/EIfp.png, id=188, 441.65pt x 221.82875pt>
 File: images/EIfp.png Graphic file (type png)
-
-<use images/EIfp.png>
-Package pdftex.def Info: images/EIfp.png used on input line 104.
+ <use images/EIfp.png>
+Package pdftex.def Info: images/EIfp.png used on input line 108.
 (pdftex.def)             Requested size: 136.50238pt x 68.55971pt.
- [10 <./images/EIfp.png>]
-<images/EOcomp.png, id=181, 574.145pt x 263.98625pt>
-File: images/EOcomp.png Graphic file (type png)
- <use images/EOcomp.png>
-Package pdftex.def Info: images/EOcomp.png used on input line 140.
-(pdftex.def)             Requested size: 195.0pt x 89.65746pt.
 
-[11 <./images/EOcomp.png>] <images/EOfp.png, id=189, 426.59375pt x 218.8175pt>
+[10 <./images/EIfp.png>] <images/EOcomp.png, id=197, 574.145pt x 263.98625pt>
+File: images/EOcomp.png Graphic file (type png)
+
+<use images/EOcomp.png>
+Package pdftex.def Info: images/EOcomp.png used on input line 146.
+(pdftex.def)             Requested size: 195.0pt x 89.65746pt.
+ <images/EOfp.png, id=198, 426.59375pt x 218.8175pt>
 File: images/EOfp.png Graphic file (type png)
 
 <use images/EOfp.png>
-Package pdftex.def Info: images/EOfp.png used on input line 153.
+Package pdftex.def Info: images/EOfp.png used on input line 159.
 (pdftex.def)             Requested size: 136.50238pt x 70.01968pt.
- <images/EQcomp.png, id=190, 334.24875pt x 149.55875pt>
+ [11
+
+ <./images/EOcomp.png> <./images/EOfp.png>]
+<images/EQcomp.png, id=207, 334.24875pt x 149.55875pt>
 File: images/EQcomp.png Graphic file (type png)
-
-<use images/EQcomp.png>
-Package pdftex.def Info: images/EQcomp.png used on input line 176.
+ <use images/EQcomp.png>
+Package pdftex.def Info: images/EQcomp.png used on input line 184.
 (pdftex.def)             Requested size: 195.0pt x 87.25531pt.
- <images/EQfp.png, id=191, 240.9pt x 125.46875pt>
-File: images/EQfp.png Graphic file (type png)
 
-<use images/EQfp.png>
-Package pdftex.def Info: images/EQfp.png used on input line 189.
+<images/EQfp.png, id=208, 240.9pt x 125.46875pt>
+File: images/EQfp.png Graphic file (type png)
+ <use images/EQfp.png>
+Package pdftex.def Info: images/EQfp.png used on input line 197.
 (pdftex.def)             Requested size: 136.50238pt x 71.09673pt.
- [12 <./images/EOfp.png>] [13 <./images/EQcomp.png> <./images/EQfp.png>] [14] [
-15
+ [12
+
+ <./images/EQcomp.png>] [13 <./images/EQfp.png>] [14
+
+] [15
 
 ] [16] [17]
-<images/cocohome.png, id=247, 1205.50375pt x 818.05624pt>
+<images/cocohome.png, id=262, 1205.50375pt x 818.05624pt>
 File: images/cocohome.png Graphic file (type png)
 
 <use images/cocohome.png>
-Package pdftex.def Info: images/cocohome.png used on input line 321.
+Package pdftex.def Info: images/cocohome.png used on input line 331.
 (pdftex.def)             Requested size: 390.0pt x 264.65433pt.
 
-<images/cocores1.png, id=248, 695.59875pt x 193.72375pt>
+<images/cocores1.png, id=263, 695.59875pt x 193.72375pt>
 File: images/cocores1.png Graphic file (type png)
 
 <use images/cocores1.png>
-Package pdftex.def Info: images/cocores1.png used on input line 327.
+Package pdftex.def Info: images/cocores1.png used on input line 337.
 (pdftex.def)             Requested size: 234.00238pt x 65.16759pt.
 
-<images/cocores2.png, id=249, 778.91pt x 193.72375pt>
+<images/cocores2.png, id=264, 778.91pt x 193.72375pt>
 File: images/cocores2.png Graphic file (type png)
 
 <use images/cocores2.png>
-Package pdftex.def Info: images/cocores2.png used on input line 333.
+Package pdftex.def Info: images/cocores2.png used on input line 343.
 (pdftex.def)             Requested size: 234.00238pt x 58.19737pt.
 ) [18
 
 ] [19 <./images/cocohome.png> <./images/cocores1.png> <./images/cocores2.png>]
 Chapter 3.
-(./chapters/schedule.tex) [20
+(./chapters/schedule.tex <images/gantt1.png, id=280, 661.5114pt x 988.1718pt>
+File: images/gantt1.png Graphic file (type png)
 
-]
+<use images/gantt1.png>
+Package pdftex.def Info: images/gantt1.png used on input line 13.
+(pdftex.def)             Requested size: 390.0pt x 582.59412pt.
+
+
+LaTeX Warning: Float too large for page by 18.09412pt on input line 15.
+
+<images/gantt2.png, id=281, 583.9416pt x 992.0262pt>
+File: images/gantt2.png Graphic file (type png)
+ <use images/gantt2.png>
+Package pdftex.def Info: images/gantt2.png used on input line 19.
+(pdftex.def)             Requested size: 390.0pt x 662.55005pt.
+
+
+LaTeX Warning: Float too large for page by 98.05005pt on input line 21.
+
+) [20
+
+] [21 <./images/gantt1.png>] [22 <./images/gantt2.png>]
 Chapter 4.
-(./chapters/resource.tex) [21
+(./chapters/resource.tex <images/gantt3.png, id=299, 672.5928pt x 1132.7118pt>
+File: images/gantt3.png Graphic file (type png)
 
-]
+<use images/gantt3.png>
+Package pdftex.def Info: images/gantt3.png used on input line 14.
+(pdftex.def)             Requested size: 390.0pt x 656.81776pt.
+
+
+LaTeX Warning: Float too large for page by 92.31776pt on input line 16.
+
+<images/gantt4.png, id=300, 629.2308pt x 1131.7482pt>
+File: images/gantt4.png Graphic file (type png)
+ <use images/gantt4.png>
+Package pdftex.def Info: images/gantt4.png used on input line 20.
+(pdftex.def)             Requested size: 390.0pt x 701.4694pt.
+
+
+LaTeX Warning: Float too large for page by 136.9694pt on input line 22.
+
+) [23
+
+] [24 <./images/gantt3.png>] [25 <./images/gantt4.png>]
 Chapter 5.
-(./chapters/risk.tex) [22
+(./chapters/risk.tex
 
-]
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 3.
+
+[26
+
+]) [27]
 Chapter 6.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 88.
-[23
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 91.
+[28
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 88.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 91.
  (./pp.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 88.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 88.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 91.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 91.
 Package rerunfilecheck Info: File `pp.out' has not changed.
-(rerunfilecheck)             Checksum: 1733676D233E46CBCBA3C3EDE50C0F0B;1418.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 88.
+(rerunfilecheck)             Checksum: 718BAED11260E08FC5E9F557CB46E73F;1640.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 91.
  ) 
 Here is how much of TeX's memory you used:
- 7222 strings out of 493117
- 105498 string characters out of 6135434
- 200807 words of memory out of 5000000
- 10521 multiletter control sequences out of 15000+600000
+ 7257 strings out of 493117
+ 106063 string characters out of 6135434
+ 198807 words of memory out of 5000000
+ 10540 multiletter control sequences out of 15000+600000
  9150 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,9n,35p,539b,554s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,9n,35p,564b,621s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
 /usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on pp.pdf (23 pages, 508036 bytes).
+Output written on pp.pdf (28 pages, 909722 bytes).
 PDF statistics:
- 321 PDF objects out of 1000 (max. 8388607)
- 265 compressed objects within 3 object streams
- 86 named destinations out of 1000 (max. 500000)
- 229 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 372 PDF objects out of 1000 (max. 8388607)
+ 302 compressed objects within 4 object streams
+ 98 named destinations out of 1000 (max. 500000)
+ 273 words of extra memory for PDF output out of 10000 (max. 10000000)
 
