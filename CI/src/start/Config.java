@@ -164,7 +164,7 @@ public final class Config {
         || command.getName() == StartupCommandUtil.StartupOption.STATUS.getName() )
         || ofbizCommands.isEmpty()
         || ofbizCommands.stream().allMatch(command ->
-            command.getName() == StartupCommandUtil.StartupOption.PORTOFFSET.getName()) 
+            command.getName() == StartupCommandUtil.StartupOption.PORTOFFSET.getName())
                 ){
             fileName = "start";
         } else if(ofbizCommands.stream().anyMatch(

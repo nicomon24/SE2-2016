@@ -2,22 +2,86 @@ In this Chapter, every step of the Code Inspection checklist is documented.
 
 \section{Naming Conventions}
 \begin{enumerate}
-\item [\textcolor{yellow}{1}]\textcolor{yellow}{Names are meaningful}
+\item [1] Variables names are meaningful 
 \item [2] One-char variables are used only as exceptions. 
 \item [3] Class names are mixed case with first uppercase letter.
-\item [4] No interface is declared here
+\item [4] No interface is declared here
 \item [5] All method names start with verbs and have mixed case
 \item [6] All class variable have mixed with starting lower case char (no underscores either)
 \item [7] This class has no constants
 \end{enumerate}
 
 \section{Indention}
+\begin{enumerate}
 \item [8] Four space are used to indent every time
 \item [9] No tab are used in the file
+\end{enumerate}
 
 \section{Braces}
-\item [10] All braces are in K&R style.
+\begin{enumerate}
+\item [10] All braces are in K\&R style.
 \item [11] Every single statement block is braced correctly
+\end{enumerate}
 
 \section{File Organization}
-\item [12] 
+\begin{enumerate}
+\item [12] Section are well separated by spaces
+\item [13] \textcolor{red}{Many lines exceed the 80 char limit even if not necessary.} Lines: 74, 86, 114, 116, 121, 198, 201, 228, 249, 268, 270, 278, 280 can be written more elegantly. Other lines exceed 80 char limit but can be accepted. 
+\item [14] \textcolor{red}{Some lines also exceed 120 char limit.} Lines: 74, 228, 268, 270, 280
+\end{enumerate}
+
+\section{Wrapping lines}
+\begin{enumerate}
+\item [15] \textcolor{red}{Some operators are inserted after the line break.} Lines: 163, 164, 165, 166
+\item [16] High-level breaks are used.
+\item [17] \textcolor{red}{New statements are not aligned with the beginning of the previous line at the same level} Lines: 162, 163, 164, 165, 166
+\end{enumerate}
+
+\section{Comments}
+\begin{enumerate}
+\item [18] \textcolor{yellow}{Comments could explain more.} Some method's function could be better explained even if quite simple. 
+\item [19] There is no commented out code.
+\end{enumerate}
+
+\section {Java Source Files} 
+\begin{enumerate}
+\item [20] This java contains only one Java Class.
+\item [21] The public class is the first class of the file
+\item [22] As in the Javadoc, this Class does not expose any external interface, only public variables to be read-only.
+\item [23] The Javadoc is practically complete.
+\end{enumerate}
+
+\section {Package and Import Statements}
+\begin{enumerate}
+\item [24] The first non comment line is the package, all the imports follows. 
+\end{enumerate}
+
+\section {Class and Interface Declarations}
+\begin{enumerate}
+\item [25] Declarations follow the order provided. 
+\item [26] Since methods perform very different tasks, it is difficult to find a correct order.
+\item [27] Code is free of duplicates, long methods and big classes.
+\end{enumerate}
+
+\section {Initialization and Declarations}
+\begin{enumerate}
+\item [28] 
+\end{enumerate}
+
+\section {Method Calls}
+
+\section {Arrays}
+
+\section {Object Comparisons}
+
+\section {Output Format}
+
+\section {Computation, Comparisons, Assignments}
+
+\section {Exceptions}
+
+\section {Flow of Control}
+
+\section {Files}
+
+

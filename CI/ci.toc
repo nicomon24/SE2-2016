@@ -3,3 +3,19 @@
 \contentsline {chapter}{\numberline {3}Checklist}{6}{chapter.3}
 \contentsline {section}{\numberline {3.1}Naming Conventions}{6}{section.3.1}
 \contentsline {section}{\numberline {3.2}Indention}{6}{section.3.2}
+\contentsline {section}{\numberline {3.3}Braces}{6}{section.3.3}
+\contentsline {section}{\numberline {3.4}File Organization}{7}{section.3.4}
+\contentsline {section}{\numberline {3.5}Wrapping lines}{7}{section.3.5}
+\contentsline {section}{\numberline {3.6}Comments}{7}{section.3.6}
+\contentsline {section}{\numberline {3.7}Java Source Files}{7}{section.3.7}
+\contentsline {section}{\numberline {3.8}Package and Import Statements}{7}{section.3.8}
+\contentsline {section}{\numberline {3.9} }{8}{section.3.9}
+\contentsline {section}{\numberline {3.10}Initialization and Declarations}{8}{section.3.10}
+\contentsline {section}{\numberline {3.11}Method Calls}{8}{section.3.11}
+\contentsline {section}{\numberline {3.12}Arrays}{8}{section.3.12}
+\contentsline {section}{\numberline {3.13}Object Comparisons}{8}{section.3.13}
+\contentsline {section}{\numberline {3.14}Output Format}{8}{section.3.14}
+\contentsline {section}{\numberline {3.15}Computation, Comparisons, Assignments}{8}{section.3.15}
+\contentsline {section}{\numberline {3.16}Exceptions}{8}{section.3.16}
+\contentsline {section}{\numberline {3.17}Flow of Control}{8}{section.3.17}
+\contentsline {section}{\numberline {3.18}Files}{8}{section.3.18}
