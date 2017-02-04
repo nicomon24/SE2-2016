@@ -65,23 +65,64 @@ In this Chapter, every step of the Code Inspection checklist is documented.
 
 \section {Initialization and Declarations}
 \begin{enumerate}
-\item [28] 
+\item [28] All variables and class members are of the correct type. Moreover they have the right visibility.
+\item [29] All variables are declared in the proper scope.
+\item [30] When new objects are created the constructor is always called.
+\item [31] All object references are initialised before use.
+\item [32] Variables are initialized where they are declared, in rare cases (e.g. line 60 and 225) they depend on computation so they cannot be initialised before.
+\item [33] Declarations always happen at the beginning of a block.
 \end{enumerate}
 
 \section {Method Calls}
-
+\begin {enumerate}
+\item [34] All methods are called properly with all parameters in the correct order.
+\item [35] The correct method is always being called.
+\item [36] Method returned values are used properly.
+\end{enumerate}
 \section {Arrays}
-
+\begin{enumerate}
+\item [37] There are no off-by-one errors (for Lists and ArrayLists the safe method .add() is always used)
+\item [38] All array indexes have been prevented from going out-of-bounds.
+\item [39] Constructors are always called when a new array item is desired.
+\end{enumerate}
 \section {Object Comparisons}
-
+\begin{enumerate}
+\item [40] \textcolor{red}{Some objects are compared with == instead of equals().} Lines: 162, 163, 164, 167, 171, 174.
+\end{enumerate}
 \section {Output Format}
-
+\begin{enumerate}
+\item [41] The displayed output is free of spelling and grammatical errors.
+\item [42] The error messages are comprehensive but they \textcolor{red}{do not provide} any guidance on how to correct the problem.
+\item [43] The output is correctly formatted.
+\end{enumerate}
 \section {Computation, Comparisons, Assignments}
-
+\begin{enumerate}
+\item [44] The file is a simple configuration class, hence no expensive computation is carried out. So the implementation of course avoids "brutish programming".
+\item [45] The order of computation/evaluation is correct. there are no computations needing parenthesis.
+\item [46] Computations are really simple and done one by one, hence there is no need to use parenthesis.
+\item [47] There are no denominators in this class.
+\item [48] There are only simple integer additions and the two addends are always integers. Hence the implementation of course avoids truncation/rounding.
+\item [49] Comparisons and Boolean operations are always correct.
+\item [50] Try-Catch exceptions are fine and the error condition is always legitimate.
+\item [51] The code is free of implicit type conversions.
+\end{enumerate}
 \section {Exceptions}
-
+\begin{enumerate}
+\item [52] All the relevant exceptions are caught.
+\item [53] Appropriate actions are taken for each catch block.
+\end{enumerate}
 \section {Flow of Control}
-
+\begin{enumerate}
+\item [54] In the switch statement found in line 184, the last case (line 191) \textcolor{red}{does not contain break or return.}
+\item [55] The switch statement found in line 184 \textcolor{red}{does not have a default branch.}
+\item [56] All loops are correctly formed, but the while loop (line 246) \textcolor{yellow}{could be written in a more elegant way.}
+\end{enumerate}
 \section {Files}
+\begin{enumerate}
+\item [57] All files are properly declared and opened.
+\item [58] All files are closed properly, even in the case of an error.
+\item [59] All EOF conditions are detected and handled correctly.
+\item [60] All file exceptions are caught and dealt with.
+\end{enumerate}
 
 
