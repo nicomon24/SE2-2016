@@ -1,4 +1,4 @@
-\BOOKMARK [0][-]{chapter.1}{Class identification and role}{}% 1
+\BOOKMARK [0][-]{chapter.1}{Class Identification and Role}{}% 1
 \BOOKMARK [0][-]{chapter.2}{Found Issues}{}% 2
 \BOOKMARK [0][-]{chapter.3}{Checklist}{}% 3
 \BOOKMARK [1][-]{section.3.1}{Naming Conventions}{chapter.3}% 4
@@ -9,7 +9,7 @@
 \BOOKMARK [1][-]{section.3.6}{Comments}{chapter.3}% 9
 \BOOKMARK [1][-]{section.3.7}{Java Source Files}{chapter.3}% 10
 \BOOKMARK [1][-]{section.3.8}{Package and Import Statements}{chapter.3}% 11
-\BOOKMARK [1][-]{section.3.9}{ }{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.9}{Class and Interface Declarations}{chapter.3}% 12
 \BOOKMARK [1][-]{section.3.10}{Initialization and Declarations}{chapter.3}% 13
 \BOOKMARK [1][-]{section.3.11}{Method Calls}{chapter.3}% 14
 \BOOKMARK [1][-]{section.3.12}{Arrays}{chapter.3}% 15
@@ -19,3 +19,4 @@
 \BOOKMARK [1][-]{section.3.16}{Exceptions}{chapter.3}% 19
 \BOOKMARK [1][-]{section.3.17}{Flow of Control}{chapter.3}% 20
 \BOOKMARK [1][-]{section.3.18}{Files}{chapter.3}% 21
+\BOOKMARK [0][-]{chapter.4}{Work Review}{}% 22
