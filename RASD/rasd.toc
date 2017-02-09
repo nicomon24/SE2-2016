@@ -5,26 +5,26 @@
 \contentsline {section}{\numberline {1.4}Glossary}{8}{section.1.4}
 \contentsline {section}{\numberline {1.5}Stakeholders}{8}{section.1.5}
 \contentsline {section}{\numberline {1.6}References}{8}{section.1.6}
-\contentsline {chapter}{\numberline {2}Actors}{9}{chapter.2}
-\contentsline {chapter}{\numberline {3}Requirements}{10}{chapter.3}
-\contentsline {section}{\numberline {3.1}Functional Requirements}{10}{section.3.1}
-\contentsline {section}{\numberline {3.2}Non-functional requirements}{13}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Usability}{13}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Privacy and Security}{13}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Architectural consideration}{13}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Mobile application}{14}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Web portal}{17}{subsection.3.2.5}
-\contentsline {chapter}{\numberline {4}Scenario Identification}{18}{chapter.4}
-\contentsline {chapter}{\numberline {5}Use Cases}{21}{chapter.5}
-\contentsline {section}{\numberline {5.1}UML use case diagram}{21}{section.5.1}
-\contentsline {section}{\numberline {5.2}Driver use cases}{22}{section.5.2}
-\contentsline {section}{\numberline {5.3}Worker use cases}{27}{section.5.3}
-\contentsline {section}{\numberline {5.4}Admin use cases}{29}{section.5.4}
-\contentsline {section}{\numberline {5.5}Sequence diagrams}{31}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Registration}{31}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Reservation with Report}{32}{subsection.5.5.2}
-\contentsline {section}{\numberline {5.6}Class diagram}{33}{section.5.6}
-\contentsline {chapter}{\numberline {6}Model Coherence Analysis}{34}{chapter.6}
-\contentsline {section}{\numberline {6.1}Alloy code}{34}{section.6.1}
-\contentsline {section}{\numberline {6.2}Generated world and results}{36}{section.6.2}
-\contentsline {chapter}{\numberline {7}Work review}{38}{chapter.7}
+\contentsline {chapter}{\numberline {2}Actors}{10}{chapter.2}
+\contentsline {chapter}{\numberline {3}Requirements}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}Functional Requirements}{11}{section.3.1}
+\contentsline {section}{\numberline {3.2}Non-functional requirements}{14}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Usability}{14}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Privacy and Security}{14}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Architectural consideration}{14}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Mobile application}{16}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Web portal}{19}{subsection.3.2.5}
+\contentsline {chapter}{\numberline {4}Scenario Identification}{20}{chapter.4}
+\contentsline {chapter}{\numberline {5}Use Cases}{23}{chapter.5}
+\contentsline {section}{\numberline {5.1}UML use case diagram}{23}{section.5.1}
+\contentsline {section}{\numberline {5.2}Driver use cases}{24}{section.5.2}
+\contentsline {section}{\numberline {5.3}Worker use cases}{29}{section.5.3}
+\contentsline {section}{\numberline {5.4}Admin use cases}{31}{section.5.4}
+\contentsline {section}{\numberline {5.5}Sequence diagrams}{33}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Registration}{33}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Reservation with Report}{34}{subsection.5.5.2}
+\contentsline {section}{\numberline {5.6}Class diagram}{35}{section.5.6}
+\contentsline {chapter}{\numberline {6}Model Coherence Analysis}{36}{chapter.6}
+\contentsline {section}{\numberline {6.1}Alloy code}{36}{section.6.1}
+\contentsline {section}{\numberline {6.2}Generated world and results}{38}{section.6.2}
+\contentsline {chapter}{\numberline {7}Work review}{40}{chapter.7}

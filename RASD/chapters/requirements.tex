@@ -8,25 +8,39 @@ Given all the assumptions, domain properties and constraints from \underline{\au
 	\item The system must check if the provided user exists and if the provided password matches
 	\item The system must provide further access only if the user is logged
 	\end{itemize}
-\item \textbf{[GOAL2]} Allow drivers to reserve a car up to one hour before they pick it up
+\item \textbf{[GOAL2]} Allow drivers to reserve a Vehicle up to one hour before they pick it up
 	\begin{itemize}
 	\item The system must access driver GPS position or use a user-provided position to recommend the best vehicle to choose
 	\item The system must check if the user is logged in and if it is not a blocked driver
 	\item The system must check that the user has no other active reservation 
 	\item The system must check payment service by pre-authorizing a payment of a fixed amount (to be defined)
-	\item The system must reserve the chosen vehicle, i.e. no other user is allowed to reserve the car until it is available again, once the payment is done. The vehicle is considered available again in case of: drop off, cancel registration, one hour passed from the reservation without any driver interaction
+	\item The system must reserve the chosen vehicle, i.e. no other user is allowed to reserve the Vehicle until it is available again, once the payment is done. The vehicle is considered available again in case of: drop off, cancel registration, one hour passed from the reservation without any driver interaction
 	\end{itemize}
-\item \textbf{[GOAL3]} Allow drivers to open the reserved car
+\item \textbf{[GOAL3]} Allow drivers to open the reserved Vehicle
 	\begin{itemize}
-	\item The system must check if the user is nearby the reserved car to open it
-	\item The system must be able to open the car remotely, only if the user effectively reserved it and is nearby
+	\item The system must check if the user is nearby the reserved Vehicle to open it
+	\item The system must be able to open the Vehicle remotely, only if the user effectively reserved it and is nearby
 	\end{itemize}
 \item \textbf{[GOAL4]} Allow drivers to pay correctly for the service
 	\begin{itemize}
 	\item The system must log the whole drive by the driver (elapsed time, driven km)
-	\item The system must compute the amount the driver must pay for the service
+	\item The system must compute the amount the driver must pay for the service. The total amount due is computed by calculating a base amount depending on the Drive duration at the current fares (¤ per minute), and applying discounts, as shown in Table 3.1 .
 	\item The system must request a payment of the correct amount 
 	\end{itemize}
+	
+\begin{table}
+  \centering
+    \begin{tabular}{| l | l |}
+    \hline
+    \textbf{Action} & \textbf{Discount} \\ \hline
+    Driver took more than 2 passengers on the Drive & -10\% \\ \hline
+    Vehicle is left with 50\% battery or more & -20\% \\ \hline
+    Vehicle is left recharging & -30\% \\ \hline
+    Vehicle is left far from charging station (3km) or with less than 20\% battery & +30\% \\ \hline
+    \end{tabular}
+  \caption{Discounts}
+\end{table}
+
 \item \textbf{[GOAL5]} Allow drivers to cancel a reservation
 	\begin{itemize}
 	\item The system must be able to cancel a reservation if the driver asks it, given that the reservation has not exceed the 1 hour limit, without making him pay
@@ -44,11 +58,11 @@ Given all the assumptions, domain properties and constraints from \underline{\au
 	\end{itemize}
 \item \textbf{[GOAL52]} Allow workers to get informations about an assigned task
 	\begin{itemize}
-	\item The system must provide through the PowerEniWorker App all the needed information for the Worker. These include the GPS position of the car, the reported issue and additional information the user could have provided
+	\item The system must provide through the PowerEniWorker App all the needed information for the Worker. These include the GPS position of the Vehicle, the reported issue and additional information the user could have provided
 	\end{itemize}
-\item \textbf{[GOAL53]} Allow workers to open and control the assigned car
+\item \textbf{[GOAL53]} Allow workers to open and control the assigned Vehicle
 	\begin{itemize}
-	\item The System, during the assignment of a Task, gives to the chosen Worker the complete control of the car, i.e. normal actions (turn on/off engine, lock/unlock) but also priviliged actions (open hood, access maintenance interfaces, e.g. OBD)
+	\item The System, during the assignment of a Task, gives to the chosen Worker the complete control of the Vehicle, i.e. normal actions (turn on/off engine, lock/unlock) but also priviliged actions (open hood, access maintenance interfaces, e.g. OBD)
 	\end{itemize}
 \item \textbf{[GOAL54]} Allow workers to update the state of the task (assigned, in progress, done)
 	\begin{itemize}
@@ -67,12 +81,12 @@ Given all the assumptions, domain properties and constraints from \underline{\au
 	\end{itemize}
 \item \textbf{[GOAL102]} Allow to view the status of a specific vehicle
 	\begin{itemize}
-	\item The System must provide an interface to select a car among all.
-	\item The System must provide analytics and current status of the chosen car.
+	\item The System must provide an interface to select a Vehicle among all.
+	\item The System must provide analytics and current status of the chosen Vehicle.
 	\end{itemize}
 \item \textbf{[GOAL103]} Allow to request an exceptional task on a specific vehicle
 	\begin{itemize}
-	\item The System must provide an interface to select a car among all.
+	\item The System must provide an interface to select a Vehicle among all.
 	\item The System must provide a button to create a new Task, along with specification of the Task itself, inserted manually by the Admin.
 	\item The System assigns the newly generated Task to the most suitable available Worker as in a normal Task
 	\end{itemize}
@@ -86,7 +100,7 @@ Given all the assumptions, domain properties and constraints from \underline{\au
 The target user for the service is heterogeneous. It ranges from students, who have a deep understanding of technology, to senior citizens, who find it more difficult. Hence the user interface should be simple and understandable for everyone. \\
 
 \subsection{Privacy and Security}
-The system should be able to protect users' personal data, in particular login credentials, payment information and location of the Drivers, which are sensible information nowadays. At the same time we need to find a trade-off between security of our assets (cars and vans) and accessibility for the final user. Therefore our goal is to develop a vulnerability free System using good programming practices. \\
+The system should be able to protect users' personal data, in particular login credentials, payment information and location of the Drivers, which are sensible information nowadays. At the same time we need to find a trade-off between security of our assets (vehicles) and accessibility for the final user. Therefore our goal is to develop a vulnerability free System using good programming practices. \\
 
 \subsection{Architectural consideration}
 The fundamental part of the system is obviously the server-side application, that provides API to interact with the System. 

@@ -62,9 +62,9 @@ Here we list relevant use cases for the Driver:\\
 \end{center}
 
 
-\textbf{\large Car reservation}
+\textbf{\large Vehicle reservation}
 \bigbreak
-\textbf{Name:} Car reservation \\
+\textbf{Name:} Vehicle reservation \\
 \textbf{Actors:} Driver \\
 \textbf{Entry conditions:} 
 \begin{itemize}
@@ -73,15 +73,15 @@ Here we list relevant use cases for the Driver:\\
 \end{itemize}
 \textbf{Flow of events:} 
 \begin{itemize}
-\item The System automatically fetches the Driver's position and presents a list of available nearby cars;
-\item The Driver selects one of the available cars;
-\item The System pre-authorizes the fixed amount from the credit card and marks the car as reserved;
-\item The System shows a "success" message and sends an email with reservation information (car location, car plate, cancel reservation link)
+\item The System automatically fetches the Driver's position and presents a list of available nearby Vehicles;
+\item The Driver selects one of the available Vehicles;
+\item The System pre-authorizes the fixed amount from the credit card and marks the Vehicle as reserved;
+\item The System shows a "success" message and sends an email with reservation information (Vehicle location, Vehicle plate, cancel reservation link)
 \end{itemize}
 \textbf{Exit conditions:} 
 \begin{itemize}
-\item The Driver has a reservation and cannot reserve other cars 
-\item The car is not available for other Drivers.\\
+\item The Driver has a reservation and cannot reserve other Vehicles 
+\item The Vehicle is not available for other Drivers.\\
 \end{itemize}
 \textbf{Exceptions:} 
 \begin{itemize}
@@ -100,22 +100,22 @@ Here we list relevant use cases for the Driver:\\
 \textbf{Actors:} Driver \\
 \textbf{Entry conditions:} 
 \begin{itemize}
-\item The Driver has already reserved a car.
+\item The Driver has already reserved a Vehicle.
 \end{itemize}
 \textbf{Flow of events:} 
 \begin{itemize}
-\item The System waits till the user is nearby the car then enables the open button on the application;
-\item The Driver opens the car by pressing the button;
-\item The Driver gets inside the car, turns it on and begins to drive;
+\item The System waits till the user is nearby the Vehicle then enables the open button on the application;
+\item The Driver opens the Vehicle by pressing the button;
+\item The Driver gets inside the Vehicle, turns it on and begins to drive;
 \item The System logs the route and the duration of the drive;
 \item The System presents to the Driver his current due amount and all the nearby recharging stations;
-\item When the Driver stops the car in a Safe Area and he gets outside, the car waits 30 seconds and then locks itself automatically. The Ride is terminated.
+\item When the Driver stops the Vehicle in a Safe Area and he presses the termination button, the Vehicle locks and the Drive is terminated.
 \item The System calculates the correct amount to be paid (depending on discount policies) and charges the Driver's credit card accordingly.
 \end{itemize}
-\textbf{Exit conditions:} the Driver got to the final destination and the car is marked again as "available".\\
+\textbf{Exit conditions:} the Driver got to the final destination and the Vehicle is marked again as "available".\\
 \textbf{Exceptions:}  
 \begin{itemize}
-\item If the Driver does not start his ride within one hour, the reservation expires and his credit card is charged 1 Euro and the car status is reset to "available". 
+\item If the Driver does not start his ride within one hour, the reservation expires and his credit card is charged 1 Euro and the Vehicle status is reset to "available". 
 \end{itemize}
 
 \begin{center}
@@ -129,7 +129,7 @@ Here we list relevant use cases for the Driver:\\
 \textbf{Actors:} Driver \\
 \textbf{Entry conditions:} 
 \begin{itemize}
-\item The Driver has already reserved a car;
+\item The Driver has already reserved a Vehicle;
 \item The reservation happened within one hour.
 \end{itemize}
 \textbf{Flow of events:} 
@@ -139,8 +139,8 @@ Here we list relevant use cases for the Driver:\\
 \end{itemize}
 \textbf{Exit conditions:} 
 \begin{itemize}
-\item The car is marked as "available" again;
-\item The Driver can reserve cars again.
+\item The Vehicle is marked as "available" again;
+\item The Driver can reserve Vehicles again.
 \end{itemize}
 \textbf{Exceptions:} there are no exceptions for this use case.\\
 
@@ -157,18 +157,18 @@ Here we list relevant use cases for the Driver:\\
 \textbf{Entry conditions:} 
 \begin{itemize}
 \item The Driver started his ride;
-\item The car has a problem.
+\item The Vehicle has a problem.
 \end{itemize}
 \textbf{Flow of events:} 
 \begin{itemize}
 \item The Driver clicks on the "report" button and specifies the type of problem; 
 \item The ride terminates and the Driver pays accordingly;
-\item The Driver gets outside the car.
+\item The Driver gets outside the Vehicle.
 \end{itemize}
 \textbf{Exit conditions:} 
 \begin{itemize}
 \item A Task is generated and is assigned to the most suitable available Worker;
-\item The Driver can reserve cars again.
+\item The Driver can reserve Vehicles again.
 \end{itemize}
 \textbf{Exceptions:} there are no exceptions for this use case.\\
 
@@ -250,7 +250,7 @@ Here we list relevant use cases for the Worker:\\
 \textbf{Flow of events:} 
 \begin{itemize}
 \item The System chooses the most suitable available Worker depending on its policies (distance, workload, van batteries);
-\item The System notifies with a push notification the selected Worker and sends him all the needed information (location, type of task, car info).
+\item The System notifies with a push notification the selected Worker and sends him all the needed information (location, type of task, Vehicle info).
 \end{itemize}
 \textbf{Exit conditions:} 
 \begin{itemize}
@@ -381,7 +381,7 @@ Here we list relevant use cases for the Admin:\\
 \end{itemize}
 \textbf{Flow of events:} 
 \begin{itemize}
-\item The Admin selects the car or the worker to get analytics of;
+\item The Admin selects the Vehicle or the worker to get analytics of;
 \end{itemize}
 \textbf{Exit conditions:} 
 \begin{itemize}
@@ -405,7 +405,7 @@ Here we list relevant use cases for the Admin:\\
 \end{itemize}
 \textbf{Flow of events:} 
 \begin{itemize}
-\item The Admin writes a description of the special Task, including the car ID.
+\item The Admin writes a description of the special Task, including the Vehicle ID.
 \end{itemize}
 \textbf{Exit conditions:} 
 \begin{itemize}
